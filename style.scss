@@ -1,5 +1,23 @@
+//Variables
+$header-color: #477363;
+
+
 header {
-    height: 30%;
+    height: 30vw;
     width: 100%;
-    background: green;
+    background: $header-color;
+    color: white;
+}
+
+footer {
+    height: 30vw;
+    width: 100%;
+    background: $header-color;
+    color: white;
+}
+
+.image-container {
+    border: solid 1px black;
+    height: 30vw;
+    width: 30vw;
 }
