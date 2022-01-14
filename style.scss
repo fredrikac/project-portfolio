@@ -2,22 +2,87 @@
 $header-color: #477363;
 
 
+
+
+//font-family: 'Darker Grotesque', sans-serif; - rubriker & header
+//för brödtext: calibri? 
+
+
+//mobile first
+
+.content-container {
+    width:95%;  
+    margin: 0 auto; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
 header {
-    height: 30vw;
+    height: 30%;//använd procent istället för vw
     width: 100%;
     background: $header-color;
     color: white;
+    display: flex;
+    justify-content: center;
+
+    nav {
+        font-family: 'Darker Grotesque', sans-serif;
+        
+        a {
+            text-decoration: none;
+            color: white;
+        }
+    }
 }
+
+main {
+    h1, h2{
+        font-family: 'Darker Grotesque', sans-serif;
+    }
+
+    .image-container {
+        border: solid 1px black;
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        //här vill jag göra en horisontell linje längst ner och en vertikal till höger om bilden.
+    
+        img {
+            width: 100%;
+            height: auto; 
+            object-fit: contain;
+        }
+    }
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
 
 footer {
-    height: 30vw;
+    height: 30%;
     width: 100%;
     background: $header-color;
     color: white;
+    display: flex;
+    justify-content: center;
+    
+    a {
+        font-family: 'Darker Grotesque', sans-serif;
+        text-decoration: none;
+        color: white;
+    }
 }
 
-.image-container {
-    border: solid 1px black;
-    height: 30vw;
-    width: 30vw;
-}
+
+
+//Tablet 768px
+
+//Desktop 1200px

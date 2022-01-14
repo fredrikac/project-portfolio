@@ -1,20 +1,94 @@
+.content-container {
+  width: 95%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 header {
-  height: 30vw;
+  height: 30%;
   width: 100%;
   background: #477363;
   color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header nav {
+  font-family: 'Darker Grotesque', sans-serif;
+}
+
+header nav a {
+  text-decoration: none;
+  color: white;
+}
+
+main h1, main h2 {
+  font-family: 'Darker Grotesque', sans-serif;
+}
+
+main .image-container {
+  border: solid 1px black;
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .image-container img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 footer {
-  height: 30vw;
+  height: 30%;
   width: 100%;
   background: #477363;
   color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.image-container {
-  border: solid 1px black;
-  height: 30vw;
-  width: 30vw;
+footer a {
+  font-family: 'Darker Grotesque', sans-serif;
+  text-decoration: none;
+  color: white;
 }
 /*# sourceMappingURL=style.css.map */
