@@ -38,8 +38,32 @@ header nav a {
   color: white;
 }
 
-main h1, main h2 {
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main h1, main h2, main h3, main h4 {
   font-family: 'Darker Grotesque', sans-serif;
+}
+
+main p {
+  font-family: calibri, sans-serif;
+}
+
+main .profile-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 main .image-container {
@@ -51,6 +75,11 @@ main .image-container {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+main .image-container .vertical-line {
+  border-left: 6px solid black;
+  height: 120%;
 }
 
 main .image-container img {

@@ -39,16 +39,37 @@ header {
 }
 
 main {
-    h1, h2{
+
+    display: flex;
+    flex-direction: column;
+
+
+    h1, h2, h3, h4{
         font-family: 'Darker Grotesque', sans-serif;
     }
 
+    p {
+        font-family:  calibri, sans-serif;
+    }
+
+    .profile-container {
+        display: flex;
+        flex-direction: row;
+        
+    }
     .image-container {
         border: solid 1px black;
         width: 50%;
         display: flex;
         justify-content: center;
         //här vill jag göra en horisontell linje längst ner och en vertikal till höger om bilden.
+
+        .vertical-line {
+            border-left: 6px solid black;
+            height: 120%;
+        }
+
+      
     
         img {
             width: 100%;
