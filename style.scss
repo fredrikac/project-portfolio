@@ -1,15 +1,13 @@
 //Variables
 $header-color: #477363;
+$h-font: 'Darker Grotesque', sans-serif;
+$text-font: calibri, sans-serif; 
 
 
 
-
-//font-family: 'Darker Grotesque', sans-serif; - rubriker & header
-//för brödtext: calibri? 
 
 
 //mobile first
-
 .content-container {
     width:95%;  
     margin: 0 auto; 
@@ -21,60 +19,74 @@ $header-color: #477363;
 
 
 header {
-    height: 30%;//använd procent istället för vw
+    height: 40%;
     width: 100%;
     background: $header-color;
     color: white;
-    display: flex;
-    justify-content: center;
 
     nav {
-        font-family: 'Darker Grotesque', sans-serif;
+        font-family: $h-font;
+        display: flex; 
+        flex-direction: row;
+        justify-content: space-evenly;
         
         a {
             text-decoration: none;
             color: white;
+            font-size: 100%;//justera detta senare...
         }
     }
 }
 
 main {
-
     display: flex;
     flex-direction: column;
+    margin: 0% 10% 10% 10%;//marginal på sidorna & botten
 
 
     h1, h2, h3, h4{
-        font-family: 'Darker Grotesque', sans-serif;
+        font-family: $h-font;
     }
 
     p {
-        font-family:  calibri, sans-serif;
+        font-family:  $text-font;
     }
 
     .profile-container {
         display: flex;
         flex-direction: row;
-        
-    }
-    .image-container {
-        border: solid 1px black;
-        width: 50%;
-        display: flex;
-        justify-content: center;
-        //här vill jag göra en horisontell linje längst ner och en vertikal till höger om bilden.
+        align-items: space-between;
+        width: 100%;
+        height: 50%; //detta krävs för att kunna göra linjen
+        margin-top: 10%;
 
-        .vertical-line {
-            border-left: 6px solid black;
-            height: 120%;
+        .image-container {
+            border: solid 1px black;//tillfällig
+            width: 40%;
+            display: flex;
+           margin-right: 5%;
+    
+            img {
+                width: 100%;
+                height: auto; 
+                object-fit: contain;
+            }
         }
 
-      
-    
-        img {
-            width: 100%;
-            height: auto; 
-            object-fit: contain;
+        //skippa den for now
+        // .vertical-line {
+        //     //background: rgb(255,255,255);
+        //     //background: linear-gradient(0deg, rgba(255,255,255,0.8832575266434699) 0%, rgba(24,17,17,0.8832575266434699) 48%, rgba(244,241,241,1) 100%);;
+        //     //background: black;
+        //     height: auto;//kolla hur jag kan justera detta sen
+        //     border-left: solid 10px black;
+
+        // }
+        
+        .headline-container {
+            width: 60%;
+            font-size: 110%;
+            line-height: 50%;
         }
     }
 }
@@ -83,6 +95,44 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+    Q {
+        font-style: italic;
+        font-weight: bold;
+    }
+    
+    .tldr {
+        line-height: 50%;
+
+        h3 {
+            font-size: 180%;
+        }
+
+        p {
+            font-size: 120%;
+            line-height: 100%;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+    }
+
+    div {
+        line-height: 130%;
+
+        
+    }
+
+    .internship {
+        h4 {
+            font-size: 180%;
+        }
+
+    }
+
 }
 
 
@@ -93,10 +143,18 @@ footer {
     background: $header-color;
     color: white;
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
     
+    .linkedin-github {
+        width: 100%;
+        display: flex; 
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
     a {
-        font-family: 'Darker Grotesque', sans-serif;
+        font-family: $h-font;
         text-decoration: none;
         color: white;
     }

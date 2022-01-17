@@ -17,25 +17,30 @@
 }
 
 header {
-  height: 30%;
+  height: 40%;
   width: 100%;
   background: #477363;
   color: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 header nav {
-  font-family: 'Darker Grotesque', sans-serif;
+  font-family: "Darker Grotesque", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 header nav a {
   text-decoration: none;
   color: white;
+  font-size: 100%;
 }
 
 main {
@@ -46,10 +51,11 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin: 0% 10% 10% 10%;
 }
 
 main h1, main h2, main h3, main h4 {
-  font-family: 'Darker Grotesque', sans-serif;
+  font-family: "Darker Grotesque", sans-serif;
 }
 
 main p {
@@ -64,29 +70,34 @@ main .profile-container {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -webkit-box-align: space-between;
+      -ms-flex-align: space-between;
+          align-items: space-between;
+  width: 100%;
+  height: 50%;
+  margin-top: 10%;
 }
 
-main .image-container {
+main .profile-container .image-container {
   border: solid 1px black;
-  width: 50%;
+  width: 40%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  margin-right: 5%;
 }
 
-main .image-container .vertical-line {
-  border-left: 6px solid black;
-  height: 120%;
-}
-
-main .image-container img {
+main .profile-container .image-container img {
   width: 100%;
   height: auto;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+main .profile-container .headline-container {
+  width: 60%;
+  font-size: 110%;
+  line-height: 50%;
 }
 
 section {
@@ -102,6 +113,38 @@ section {
           justify-content: center;
 }
 
+section Q {
+  font-style: italic;
+  font-weight: bold;
+}
+
+section .tldr {
+  line-height: 50%;
+}
+
+section .tldr h3 {
+  font-size: 180%;
+}
+
+section .tldr p {
+  font-size: 120%;
+  line-height: 100%;
+}
+
+section .tldr a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+section div {
+  line-height: 130%;
+}
+
+section .internship h4 {
+  font-size: 180%;
+}
+
 footer {
   height: 30%;
   width: 100%;
@@ -110,13 +153,34 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .linkedin-github {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 footer a {
-  font-family: 'Darker Grotesque', sans-serif;
+  font-family: "Darker Grotesque", sans-serif;
   text-decoration: none;
   color: white;
 }
