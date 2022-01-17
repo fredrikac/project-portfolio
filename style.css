@@ -41,6 +41,7 @@ header nav a {
   text-decoration: none;
   color: white;
   font-size: 100%;
+  padding: 3%;
 }
 
 main {
@@ -79,7 +80,6 @@ main .profile-container {
 }
 
 main .profile-container .image-container {
-  border: solid 1px black;
   width: 40%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -92,12 +92,23 @@ main .profile-container .image-container img {
   height: auto;
   -o-object-fit: contain;
      object-fit: contain;
+  border-radius: 50%;
 }
 
 main .profile-container .headline-container {
   width: 60%;
+  height: auto;
   font-size: 110%;
-  line-height: 50%;
+  line-height: 110%;
+  text-align: center;
+}
+
+main .profile-container .headline-container h1 {
+  font-size: 200%;
+}
+
+main .profile-container .headline-container h2 {
+  font-size: 150%;
 }
 
 section {
@@ -183,5 +194,6 @@ footer a {
   font-family: "Darker Grotesque", sans-serif;
   text-decoration: none;
   color: white;
+  padding: 3%;
 }
 /*# sourceMappingURL=style.css.map */
