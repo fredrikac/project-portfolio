@@ -196,4 +196,103 @@ footer a {
   color: white;
   padding: 3%;
 }
+
+.software-skills {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.software-skills .wrapper1 {
+  width: 40%;
+}
+
+.software-skills .wrapper2 {
+  width: 40%;
+}
+
+.software-skills .outer-skill {
+  width: 100px;
+  height: 20px;
+  background: lightgray;
+}
+
+.software-skills .outer-skill .inner-skill.vsc {
+  height: 20px;
+  background: #477363;
+  width: 90%;
+}
+
+.software-skills .outer-skill .inner-skill.git {
+  height: 20px;
+  background: #477363;
+  width: 65%;
+}
+
+.software-skills .outer-skill .inner-skill.figma {
+  height: 20px;
+  background: #477363;
+  width: 80%;
+}
+
+.software-skills .outer-skill .inner-skill.xd {
+  height: 20px;
+  background: #477363;
+  width: 80%;
+}
+
+.software-skills .outer-skill .inner-skill.ps {
+  height: 20px;
+  background: #477363;
+  width: 70%;
+}
+
+.software-skills .outer-skill .inner-skill.ai {
+  height: 20px;
+  background: #477363;
+  width: 50%;
+}
+
+.code {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.code .code-skills {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.code .code-skills .text-skills .dotjs {
+  background: blue;
+  height: 10px;
+  width: 10px;
+}
+
+.code .pie-chart {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: conic-gradient(#477363 0% 2.5%, #e6a327 2.5% 33.3%, #f2672e 33.3% 66.6%, #0c73b8 66.6% 83.3%, #30a9dd 83.3% 100%);
+}
 /*# sourceMappingURL=style.css.map */
