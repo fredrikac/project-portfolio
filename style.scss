@@ -13,7 +13,7 @@ $text-font: calibri, sans-serif;
 
 
 
-//mobile first
+//mobile first - gemensam styling för alla sidor
 .content-container {
     width:95%;  
     margin: 0 auto; 
@@ -23,6 +23,12 @@ $text-font: calibri, sans-serif;
     justify-content: center;
 }
 
+
+a {
+    font-family: $text-font;
+    text-decoration: none;
+    color: black;
+}
 
 header {
     height: 40%;
@@ -45,6 +51,32 @@ header {
     }
 }
 
+footer {
+    height: 30%;
+    width: 100%;
+    background: $accent-color;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    .linkedin-github {
+        width: 100%;
+        display: flex; 
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    a {
+        font-family: $h-font;
+        text-decoration: none;
+        color: white;
+        padding: 3%;
+    }
+}
+
+
+//styling för hem
 main {
     display: flex;
     flex-direction: column;
@@ -144,35 +176,7 @@ section {
 }
 
 
-
-footer {
-    height: 30%;
-    width: 100%;
-    background: $accent-color;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    
-    .linkedin-github {
-        width: 100%;
-        display: flex; 
-        flex-direction: row;
-        justify-content: space-evenly;
-    }
-    a {
-        font-family: $h-font;
-        text-decoration: none;
-        color: white;
-        padding: 3%;
-    }
-}
-
-
-
-
-
+//Styling för cv
 .software-skills {
     display:flex;
     flex-direction: row;
@@ -233,34 +237,39 @@ footer {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        align-items: center;
 
         .text-skills {
-
-        
-
-            //en gradient bakgrund till javascript
-            // div {
-            //     background: rgb(255,255,255);
-            //     background: linear-gradient(0deg, rgba(255,255,255,0.8832575266434699) 0%, rgba(247,223,30,1) 100%, rgba(244,241,241,1) 100%);
-                
-            // }
-
-            //eller en färgklick bakom ordet. blå för js just nu 
-            .dotjs {
-                background: blue;
-                height: 10px;
-                width: 10px;
+            .js {
+                background: rgb(255,255,255);
+                background: linear-gradient(97deg, rgba(255,255,255,0.8832575266434699) 0%, rgba(247,223,30,1) 100%, rgba(244,241,241,1) 100%);
             }
 
-        }
+            .html {
+                background: rgb(255,255,255);
+                background: linear-gradient(97deg, rgba(255,255,255,0.8832575266434699) 0%, rgba(242,103,46,1) 100%, rgba(244,241,241,1) 100%);
+            }
 
- 
+            .css {
+                background: rgb(255,255,255);
+                background: linear-gradient(97deg, rgba(255,255,255,0.8832575266434699) 0%, rgba(12,115,184,1) 100%, rgba(244,241,241,1) 100%);
+            }
+
+            .scss {
+                background: rgb(255,255,255);
+                background: linear-gradient(97deg, rgba(255,255,255,0.8832575266434699) 0%, rgba(48,169,221,1) 100%, rgba(244,241,241,1) 100%);
+            }
+            .c-sharp {
+                background: rgb(255,255,255);
+                background: linear-gradient(97deg, rgba(255,255,255,0.8832575266434699) 0%, rgba(71,115,99,1) 100%, rgba(244,241,241,1) 100%);
+            }
+        }
     }
     .pie-chart {
         width: 100px;
         height: 100px;
         border-radius: 50%;
-
+        
         //C#: grön
         //JS: #f7df1e från javascript logo
         //HTML: orange #f2672e #e65127
@@ -268,13 +277,72 @@ footer {
         //SCSS: ljusare blå
     
         background: conic-gradient($accent-color 0.00% 2.5%, #e6a327 2.5% 33.3%, #f2672e 33.3% 66.6%, #0c73b8 66.6% 83.3%, #30a9dd 83.3% 100%);
-
     }
 }
 
 
 
 
-//Tablet 768px
+//Tablet, medium screen 768px
+@media only screen and (min-width: 768px) {
+     
+    header {
+        nav {
+            a {
+                font-size: 200%;
+            }
+        }
+    }
 
-//Desktop 1200px
+    //placera länkarna snyggare
+    footer {
+        a{
+            font-size: 200%;
+        }
+    }
+
+    .profile-container {
+        display: flex;
+
+        .image-container {
+            border: solid 1px black;//se var rutan är
+        }
+
+        .headline-container {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;//positionera texten
+            border: solid 1px black;//se vart rutan är
+        }
+    }
+
+    //textsektion om mig
+    .about-me {
+        .tldr {
+            font-size: 150%;
+            padding: 0% 5%;
+        }
+    
+        .textblock {
+            font-size: 120%;
+        }
+
+        //provar stylea lite. texten behöver placeras bättre, men jag gillar linjerna. Ev inte italic? Ta bort citationstecken?
+        .quote {
+            width: 50%;
+            border-top: solid 1px black;
+            border-bottom: solid 1px black;
+            padding: 3%;
+            margin: 5% 0%;
+            font-size: 150%;
+            
+        }
+
+
+    }
+  
+
+}
+
+//Desktop 
+//@media only screen and (min-width: 992px) {...}

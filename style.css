@@ -16,6 +16,12 @@
           justify-content: center;
 }
 
+a {
+  font-family: calibri, sans-serif;
+  text-decoration: none;
+  color: black;
+}
+
 header {
   height: 40%;
   width: 100%;
@@ -41,6 +47,47 @@ header nav a {
   text-decoration: none;
   color: white;
   font-size: 100%;
+  padding: 3%;
+}
+
+footer {
+  height: 30%;
+  width: 100%;
+  background: #477363;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .linkedin-github {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+footer a {
+  font-family: "Darker Grotesque", sans-serif;
+  text-decoration: none;
+  color: white;
   padding: 3%;
 }
 
@@ -156,47 +203,6 @@ section .internship h4 {
   font-size: 180%;
 }
 
-footer {
-  height: 30%;
-  width: 100%;
-  background: #477363;
-  color: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-footer .linkedin-github {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-}
-
-footer a {
-  font-family: "Darker Grotesque", sans-serif;
-  text-decoration: none;
-  color: white;
-  padding: 3%;
-}
-
 .software-skills {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -281,12 +287,34 @@ footer a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.code .code-skills .text-skills .dotjs {
-  background: blue;
-  height: 10px;
-  width: 10px;
+.code .code-skills .text-skills .js {
+  background: white;
+  background: linear-gradient(97deg, rgba(255, 255, 255, 0.883258) 0%, #f7df1e 100%, #f4f1f1 100%);
+}
+
+.code .code-skills .text-skills .html {
+  background: white;
+  background: linear-gradient(97deg, rgba(255, 255, 255, 0.883258) 0%, #f2672e 100%, #f4f1f1 100%);
+}
+
+.code .code-skills .text-skills .css {
+  background: white;
+  background: linear-gradient(97deg, rgba(255, 255, 255, 0.883258) 0%, #0c73b8 100%, #f4f1f1 100%);
+}
+
+.code .code-skills .text-skills .scss {
+  background: white;
+  background: linear-gradient(97deg, rgba(255, 255, 255, 0.883258) 0%, #30a9dd 100%, #f4f1f1 100%);
+}
+
+.code .code-skills .text-skills .c-sharp {
+  background: white;
+  background: linear-gradient(97deg, rgba(255, 255, 255, 0.883258) 0%, #477363 100%, #f4f1f1 100%);
 }
 
 .code .pie-chart {
@@ -294,5 +322,50 @@ footer a {
   height: 100px;
   border-radius: 50%;
   background: conic-gradient(#477363 0% 2.5%, #e6a327 2.5% 33.3%, #f2672e 33.3% 66.6%, #0c73b8 66.6% 83.3%, #30a9dd 83.3% 100%);
+}
+
+@media only screen and (min-width: 768px) {
+  header nav a {
+    font-size: 200%;
+  }
+  footer a {
+    font-size: 200%;
+  }
+  .profile-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .profile-container .image-container {
+    border: solid 1px black;
+  }
+  .profile-container .headline-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    border: solid 1px black;
+  }
+  .about-me .tldr {
+    font-size: 150%;
+    padding: 0% 5%;
+  }
+  .about-me .textblock {
+    font-size: 120%;
+  }
+  .about-me .quote {
+    width: 50%;
+    border-top: solid 1px black;
+    border-bottom: solid 1px black;
+    padding: 3%;
+    margin: 5% 0%;
+    font-size: 150%;
+  }
 }
 /*# sourceMappingURL=style.css.map */
