@@ -1,0 +1,18 @@
+// //Variables
+$accent-color: #477363;
+$h-font: 'Darker Grotesque', sans-serif;
+$text-font: calibri, sans-serif; 
+
+//mixins
+@mixin skill-bar-setting {
+    height: 20px;
+    background: $accent-color;
+}
+// @include skill-bar-setting
+
+@mixin flex-row-end {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+//@include flex-row-end;

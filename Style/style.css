@@ -1,6 +1,5 @@
-.content-container {
-  width: 95%;
-  margin: 0 auto;
+body {
+  margin: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -11,26 +10,37 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
-a {
+.content-wrapper {
+  width: 100%;
+  margin: -2px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.content-wrapper a {
   font-family: calibri, sans-serif;
   text-decoration: none;
-  color: black;
+  color: white;
+  padding: 3%;
+  font-size: 100%;
 }
 
-header {
+.content-wrapper header {
   height: 40%;
   width: 100%;
+  margin: auto;
   background: #477363;
   color: white;
 }
 
-header nav {
-  font-family: "Darker Grotesque", sans-serif;
+.content-wrapper header nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -43,14 +53,26 @@ header nav {
           justify-content: space-evenly;
 }
 
-header nav a {
-  text-decoration: none;
-  color: white;
-  font-size: 100%;
-  padding: 3%;
+.content-wrapper main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0% 10% 10% 10%;
 }
 
-footer {
+.content-wrapper main h1, .content-wrapper main h2, .content-wrapper main h3, .content-wrapper main h4 {
+  font-family: "Darker Grotesque", sans-serif;
+}
+
+.content-wrapper main p {
+  font-family: calibri, sans-serif;
+}
+
+.content-wrapper footer {
   height: 30%;
   width: 100%;
   background: #477363;
@@ -70,7 +92,7 @@ footer {
           align-items: center;
 }
 
-footer .linkedin-github {
+.content-wrapper footer .linkedin-github {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -84,33 +106,23 @@ footer .linkedin-github {
           justify-content: space-evenly;
 }
 
-footer a {
-  font-family: "Darker Grotesque", sans-serif;
-  text-decoration: none;
-  color: white;
-  padding: 3%;
+@media only screen and (min-width: 768px) {
+  header .tablet-nav a {
+    font-size: 200%;
+  }
+  footer {
+    padding-bottom: 5%;
+  }
+  footer .a-tablet {
+    font-size: 200%;
+    padding: 4% 0% 0% 0%;
+  }
+  footer .linkedin-github, footer .tablet {
+    width: 75%;
+  }
 }
 
-main {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  margin: 0% 10% 10% 10%;
-}
-
-main h1, main h2, main h3, main h4 {
-  font-family: "Darker Grotesque", sans-serif;
-}
-
-main p {
-  font-family: calibri, sans-serif;
-}
-
-main .profile-container {
+.homepage .profile-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -123,10 +135,11 @@ main .profile-container {
           justify-content: center;
   width: 100%;
   margin: 8% 0%;
+  padding-bottom: 5%;
   border-bottom: solid 1px black;
 }
 
-main .profile-container .image-container {
+.homepage .profile-container .image-container {
   width: 50%;
   height: auto;
   display: -webkit-box;
@@ -137,7 +150,7 @@ main .profile-container .image-container {
           align-items: center;
 }
 
-main .profile-container .image-container img {
+.homepage .profile-container .image-container img {
   width: 100%;
   height: auto;
   -o-object-fit: contain;
@@ -145,7 +158,7 @@ main .profile-container .image-container img {
   border-radius: 50%;
 }
 
-main .profile-container .headline-container {
+.homepage .headline-container {
   width: 60%;
   height: auto;
   margin-left: 5%;
@@ -154,12 +167,12 @@ main .profile-container .headline-container {
   text-align: center;
 }
 
-main .profile-container .headline-container h1 {
+.homepage .headline-container h1 {
   font-size: 200%;
   line-height: 110%;
 }
 
-main .profile-container .headline-container h2 {
+.homepage .headline-container h2 {
   font-size: 130%;
   line-height: 80%;
 }
@@ -183,7 +196,7 @@ section Q {
 }
 
 section .tldr {
-  line-height: 50%;
+  line-height: 0%;
 }
 
 section .tldr h3 {
@@ -201,150 +214,11 @@ section .tldr a {
   font-weight: bold;
 }
 
-section div {
-  line-height: 130%;
-}
-
 section .internship h4 {
   font-size: 180%;
 }
 
-.software-skills {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.software-skills .wrapper1 {
-  width: 40%;
-}
-
-.software-skills .wrapper2 {
-  width: 40%;
-}
-
-.software-skills .outer-skill {
-  width: 100px;
-  height: 20px;
-  background: lightgray;
-}
-
-.software-skills .outer-skill .inner-skill.vsc {
-  height: 20px;
-  background: #477363;
-  width: 90%;
-}
-
-.software-skills .outer-skill .inner-skill.git {
-  height: 20px;
-  background: #477363;
-  width: 65%;
-}
-
-.software-skills .outer-skill .inner-skill.figma {
-  height: 20px;
-  background: #477363;
-  width: 80%;
-}
-
-.software-skills .outer-skill .inner-skill.xd {
-  height: 20px;
-  background: #477363;
-  width: 80%;
-}
-
-.software-skills .outer-skill .inner-skill.ps {
-  height: 20px;
-  background: #477363;
-  width: 70%;
-}
-
-.software-skills .outer-skill .inner-skill.ai {
-  height: 20px;
-  background: #477363;
-  width: 50%;
-}
-
-.code {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.code .code-skills {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.code .code-skills .text-skills .js {
-  background: white;
-  background: linear-gradient(97deg, rgba(255, 255, 255, 0.883258) 0%, #f7df1e 100%, #f4f1f1 100%);
-}
-
-.code .code-skills .text-skills .html {
-  background: white;
-  background: linear-gradient(97deg, rgba(255, 255, 255, 0.883258) 0%, #f2672e 100%, #f4f1f1 100%);
-}
-
-.code .code-skills .text-skills .css {
-  background: white;
-  background: linear-gradient(97deg, rgba(255, 255, 255, 0.883258) 0%, #0c73b8 100%, #f4f1f1 100%);
-}
-
-.code .code-skills .text-skills .scss {
-  background: white;
-  background: linear-gradient(97deg, rgba(255, 255, 255, 0.883258) 0%, #30a9dd 100%, #f4f1f1 100%);
-}
-
-.code .code-skills .text-skills .c-sharp {
-  background: white;
-  background: linear-gradient(97deg, rgba(255, 255, 255, 0.883258) 0%, #477363 100%, #f4f1f1 100%);
-}
-
-.code .pie-chart {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  background: conic-gradient(#477363 0% 2.5%, #e6a327 2.5% 33.3%, #f2672e 33.3% 66.6%, #0c73b8 66.6% 83.3%, #30a9dd 83.3% 100%);
-}
-
 @media only screen and (min-width: 768px) {
-  header nav a {
-    font-size: 200%;
-  }
-  footer {
-    padding-bottom: 5%;
-  }
-  footer a {
-    font-size: 200%;
-    padding: 3% 0% 0% 0%;
-  }
-  footer .linkedin-github, footer .tablet {
-    width: 75%;
-    padding-top: 2%;
-  }
   .profile-container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -435,6 +309,133 @@ section .internship h4 {
   .textblock.internship h4.tablet {
     font-size: 200%;
   }
+}
+
+.software-skills {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.software-skills .wrapper1 {
+  width: 40%;
+  height: auto;
+}
+
+.software-skills .wrapper2 {
+  width: 40%;
+  height: auto;
+}
+
+.software-skills .outer-skill {
+  width: 100px;
+  height: 20px;
+  background: lightgray;
+}
+
+.software-skills .outer-skill .inner-skill.vsc {
+  height: 20px;
+  background: #477363;
+  width: 90%;
+}
+
+.software-skills .outer-skill .inner-skill.git {
+  height: 20px;
+  background: #477363;
+  width: 65%;
+}
+
+.software-skills .outer-skill .inner-skill.figma {
+  height: 20px;
+  background: #477363;
+  width: 80%;
+}
+
+.software-skills .outer-skill .inner-skill.xd {
+  height: 20px;
+  background: #477363;
+  width: 80%;
+}
+
+.software-skills .outer-skill .inner-skill.ps {
+  height: 20px;
+  background: #477363;
+  width: 70%;
+}
+
+.software-skills .outer-skill .inner-skill.ai {
+  height: 20px;
+  background: #477363;
+  width: 50%;
+}
+
+.code {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 10% 0%;
+}
+
+.code .code-skills {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.code .code-skills .text-skills .js {
+  background: white;
+  background: linear-gradient(97deg, rgba(255, 255, 255, 0.883258) 0%, #f7df1e 100%, #f4f1f1 100%);
+}
+
+.code .code-skills .text-skills .html {
+  background: white;
+  background: linear-gradient(97deg, rgba(255, 255, 255, 0.883258) 0%, #f2672e 100%, #f4f1f1 100%);
+}
+
+.code .code-skills .text-skills .css {
+  background: white;
+  background: linear-gradient(97deg, rgba(255, 255, 255, 0.883258) 0%, #0c73b8 100%, #f4f1f1 100%);
+}
+
+.code .code-skills .text-skills .scss {
+  background: white;
+  background: linear-gradient(97deg, rgba(255, 255, 255, 0.883258) 0%, #30a9dd 100%, #f4f1f1 100%);
+}
+
+.code .code-skills .text-skills .c-sharp {
+  background: white;
+  background: linear-gradient(97deg, rgba(255, 255, 255, 0.883258) 0%, #477363 100%, #f4f1f1 100%);
+}
+
+.code .code-skills .pie-chart {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: conic-gradient(#477363 0% 2.5%, #e6a327 2.5% 33.3%, #f2672e 33.3% 66.6%, #0c73b8 66.6% 83.3%, #30a9dd 83.3% 100%);
+}
+
+@media only screen and (min-width: 768px) {
   .cv-main {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -446,14 +447,63 @@ section .internship h4 {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    font-size: 150%;
   }
   .cv-main section {
     width: 100%;
-    border: solid 1px red;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .cv-main section .education {
+    margin-bottom: 5%;
+  }
+  .cv-main section .experience {
+    margin-bottom: 5%;
+  }
+  .cv-main section .experience p.italic {
+    font-style: italic;
+  }
+  .cv-main section .software {
+    padding: 0% 5% 5% 5%;
+  }
+  .cv-main section .software .software-skills {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .cv-main section .software .software-skills .wrapper1 {
+    width: 60%;
+  }
+  .cv-main section .software .software-skills .wrapper2 {
+    width: 40%;
+  }
+  .cv-main section .code {
+    padding: 0% 5% 5% 5%;
+  }
+  .cv-main section .code .text-skills {
+    width: 25%;
+  }
+  .cv-main section .code .text-skills p {
+    font-style: italic;
+    font-weight: 500;
+  }
+  .cv-main section .code .pie-chart-wrapper {
+    width: 45%;
+  }
+  .cv-main section .code .pie-chart-wrapper .pie-chart {
+    height: 200px;
+    width: 200px;
   }
   .cv-main aside {
     width: 100%;
-    border: solid 1px red;
   }
 }
 /*# sourceMappingURL=style.css.map */

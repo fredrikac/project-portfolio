@@ -1,0 +1,165 @@
+// //HEM
+// //Mobile first
+//content-wrapper = homepage.
+.homepage {
+    .profile-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+        margin: 8% 0%;
+        padding-bottom: 5%;
+        border-bottom: solid 1px black;
+    
+        .image-container {
+            width: 50%;
+            height: auto;
+            display: flex;
+            align-items: center;//centrerar bilden 
+    
+            img {
+                width: 100%;
+                height: auto; 
+                object-fit: contain;
+                border-radius: 50%;//oval bild
+            }
+        }
+    }
+
+    .headline-container {
+        width: 60%;
+        height: auto;
+        margin-left: 5%;
+        font-size: 110%;
+        line-height: 50%;//justera detta senare så texten ser bra ut
+        text-align: center;
+
+        h1{
+            font-size: 200%;
+            line-height: 110%;
+        }
+
+        h2 {
+            font-size: 130%;
+            line-height: 80%;
+        }
+    }
+}
+
+
+    section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        Q {
+            font-style: italic;
+            font-weight: bold;
+        }
+    
+        .tldr {
+            line-height: 0%;
+
+            h3 {
+                font-size: 200%;
+            }
+
+            p {
+                font-size: 130%;
+                line-height: 100%;
+            }
+
+            a {
+                text-decoration: none;
+                color: black;
+                font-weight: bold;
+            }
+        }
+
+        .internship {
+            h4 {
+                font-size: 180%;
+            }
+        }
+    }
+
+
+
+//Tablet HEM
+@media only screen and (min-width: 768px) {
+
+    .profile-container {
+        display: flex;
+
+        .image-container {
+            margin-bottom: 5%;
+        }
+
+        .headline-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;//positionera texten
+
+            h1.tablet {
+                font-size: 400%;
+            }
+
+            h2.tablet {
+                font-size: 200%;
+                line-height: 50%;
+            }
+            
+        }
+    }
+
+        //textsektion om mig
+        .about-me {
+            display: flex;
+            flex-direction: column;
+    
+            .tldr {
+                font-size: 150%;
+                padding: 0% 5%;
+            }
+            
+            .textblock1-wrapper{
+                @include flex-row-end;
+                align-items: center;
+            }
+    
+            .textblock2-wrapper {
+                @include flex-row-end();
+                align-items: flex-start;
+            }
+    
+            //stylear alla 3 textblocken
+            .textblock {
+               font-size: 170%;
+               line-height: 120%;
+                width: 75%;
+            }
+    
+            .quote {
+                width: 25%;
+                height: 30%;
+                border-top: solid 1px black;
+                border-bottom: solid 1px black;
+                padding: 3%;
+                margin: 8% 0% 5% 5%;
+                font-size: 150%;
+            }
+        }
+        
+        //praktikdelen
+        .textblock.internship {
+            width: 100%;
+    
+            h4.tablet {
+                font-size: 200%;
+               
+            }
+        }
+}//HÄR SLUTAR MEDIA QUERY FÖR TABLET
+
+
+

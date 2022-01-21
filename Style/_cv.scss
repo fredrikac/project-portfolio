@@ -1,0 +1,186 @@
+// //CV
+//Mobile first 
+.software-skills {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .wrapper1 {
+        width: 40%;
+        height: auto;
+    }
+
+    .wrapper2 {
+        width: 40%;
+        height: auto;
+    }
+
+    //skill-bar för program
+    .outer-skill{
+        width: 100px;
+        height: 20px;
+        background: lightgray;
+    
+        .inner-skill.vsc {
+            @include skill-bar-setting;
+            width: 90%;
+        }
+
+        .inner-skill.git {
+            @include skill-bar-setting;
+            width: 65%;
+        }
+
+        .inner-skill.figma {
+            @include skill-bar-setting;
+            width: 80%;
+        }
+
+        .inner-skill.xd {
+            @include skill-bar-setting;
+            width: 80%;
+        }
+
+        .inner-skill.ps{
+            @include skill-bar-setting;
+            width: 70%;
+        }
+
+        .inner-skill.ai {
+            @include skill-bar-setting;
+            width: 50%;
+        }
+    }
+}
+
+
+.code {
+    display: flex;
+    flex-direction: column;
+    margin: 10% 0%;
+
+    .code-skills {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+     
+
+        //bakgrund till text
+        .text-skills {
+            .js {
+                background: rgb(255,255,255);
+                background: linear-gradient(97deg, rgba(255,255,255,0.8832575266434699) 0%, rgba(247,223,30,1) 100%, rgba(244,241,241,1) 100%);
+            }
+
+            .html {
+                background: rgb(255,255,255);
+                background: linear-gradient(97deg, rgba(255,255,255,0.8832575266434699) 0%, rgba(242,103,46,1) 100%, rgba(244,241,241,1) 100%);
+            }
+
+            .css {
+                background: rgb(255,255,255);
+                background: linear-gradient(97deg, rgba(255,255,255,0.8832575266434699) 0%, rgba(12,115,184,1) 100%, rgba(244,241,241,1) 100%);
+            }
+
+            .scss {
+                background: rgb(255,255,255);
+                background: linear-gradient(97deg, rgba(255,255,255,0.8832575266434699) 0%, rgba(48,169,221,1) 100%, rgba(244,241,241,1) 100%);
+            }
+            .c-sharp {
+                background: rgb(255,255,255);
+                background: linear-gradient(97deg, rgba(255,255,255,0.8832575266434699) 0%, rgba(71,115,99,1) 100%, rgba(244,241,241,1) 100%);
+            }
+        }
+
+        //cirkeldiagram
+        .pie-chart {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            
+            //C#: grön
+            //JS: #f7df1e från javascript logo
+            //HTML: orange #f2672e #e65127
+            //CSS: mörkare blå
+            //SCSS: ljusare blå
+        
+            background: conic-gradient($accent-color 0.00% 2.5%, #e6a327 2.5% 33.3%, #f2672e 33.3% 66.6%, #0c73b8 66.6% 83.3%, #30a9dd 83.3% 100%);
+        }
+    }
+}
+
+
+//TABLET CV
+@media only screen and (min-width: 768px) {
+
+    .cv-main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 150%;
+
+        section {
+            width: 100%;
+            display: flex;
+
+            .education {
+                margin-bottom: 5%;
+            }
+
+            .experience {
+                margin-bottom: 5%;
+                p.italic {
+                    font-style: italic;
+                }
+            }
+
+            .software {
+                padding: 0% 5% 5% 5%;
+                
+                .software-skills {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+
+                    .wrapper1 {
+                        width: 60%;
+                    }
+
+                    .wrapper2 {
+                        width: 40%;
+                    }
+                }
+            }
+
+            .code {
+                padding: 0% 5% 5% 5%;
+
+                .text-skills {
+                    width: 25%;
+                    p {
+                        font-style: italic;
+                        font-weight: 500;
+                    }
+                }
+
+                .pie-chart-wrapper {
+                    width: 45%;
+
+                    .pie-chart {
+                        height: 200px;
+                        width: 200px;
+                    }
+                }
+            }
+        }
+    
+
+
+        aside {
+            width: 100%;
+        }
+
+        //lägg till fäll ut-lista på utbildning
+    }
+}//HÄR SLUTAR MEDIA QUERY FÖR TABLET

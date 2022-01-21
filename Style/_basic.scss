@@ -1,0 +1,95 @@
+//Gemensam styling för header, footer & main 
+
+//Mobile first
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+//det här wrappar alltihop, inkl header & footer
+.content-wrapper {
+    width: 100%;  
+    margin: -2px;
+    display: flex;
+    flex-direction: column;
+
+    //font och decoration för länkar i header & footer
+    a {
+        font-family: $text-font;
+        text-decoration: none;
+        color: white;
+        padding: 3%;
+        font-size: 100%;
+    }
+
+    header {
+        height: 40%;
+        width: 100%;
+        margin: auto;
+        background: $accent-color;
+        color: white;
+        
+        nav {
+            display: flex; 
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        margin: 0% 10% 10% 10%;//marginal på sidorna & botten
+    
+        h1, h2, h3, h4{
+            font-family: $h-font;
+        }
+    
+        p {
+            font-family:  $text-font;
+        }
+    }
+    
+    footer {
+        height: 30%;
+        width: 100%;
+        background: $accent-color;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        .linkedin-github {
+            width: 100%;
+            display: flex; 
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+    }
+}
+
+//Tablet
+@media only screen and (min-width: 768px) {
+    header {
+        .tablet-nav {
+            a {
+                font-size: 200%;
+            }
+        }
+    }
+        
+    footer {
+        padding-bottom: 5%;
+        .a-tablet {
+            font-size: 200%;
+            padding: 4% 0% 0% 0%;
+        }
+      
+        .linkedin-github, .tablet {
+            width: 75%;
+        }
+    }
+}
