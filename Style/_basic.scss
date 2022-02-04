@@ -93,3 +93,45 @@ body {
         }
     }
 }
+
+
+//Desktop
+@media (min-width: 992px) { 
+     
+    header {
+        .desktop-nav {
+            a {
+                font-size: 150%;
+            }
+        }
+    }
+    
+    
+    footer.desktop-footer {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        
+        .a-desktop {
+            font-size: 100%;
+            width: 33%;
+        }
+    }
+
+    body {
+        display: flex;
+        flex-direction: column;
+
+        .content-wrapper {
+            display: flex;
+            align-items: center;
+        }
+    
+        main {
+            width: 50%;
+        }
+    }
+
+
+
+}

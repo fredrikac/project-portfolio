@@ -7,16 +7,3 @@
 
 
 
-
-//Det är inget fel på kopplingen till de olika filerna. 
-
-//då bör felet ligga i koden. stylar samma saker? därför sass reagerar?
-//När jag kommenterar ut all kod i cv blir det success igen
-//När jag uncommentar all kod i basics fungerar det - felet ligger inte här.
-//När jag uncommentar all kod i index fungerar det inte
-//Slutsats: nåt är knas i koden i index & i cv. MEN VAD?
-//Kan det ha varit att det saknats en curly-bracket`? Ja
-//också: knas med @include!!! varför?
-//nånting i min pie chart är off också. 
-//OK - när jag lägger mixins lokalt fungerar @include. verkar som att nåt saknas för att koppla variables till de andra filerna.
-//OKEJ LÖSNINGEN VAR ATT VARIABLES MÅSTE LIGGA LÄNGST UPP FÖR ANNARS FUNKAR DET EJ. KUL ATT DET TOG 3TIMMAR ATT KOMMA FRAM TILL DET

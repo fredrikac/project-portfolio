@@ -56,10 +56,10 @@
             font-style: italic;
             font-weight: bold;
         }
+        
     
         .tldr {
             line-height: 0%;
-
             h3 {
                 font-size: 200%;
             }
@@ -108,7 +108,6 @@
                 font-size: 200%;
                 line-height: 50%;
             }
-            
         }
     }
 
@@ -116,50 +115,89 @@
         .about-me {
             display: flex;
             flex-direction: column;
+            align-items: center;
     
             .tldr {
-                font-size: 150%;
-                padding: 0% 5%;
-            }
-            
-            .textblock1-wrapper{
-                @include flex-row-end;
-                align-items: center;
-            }
-    
-            .textblock2-wrapper {
-                @include flex-row-end();
-                align-items: flex-start;
+                font-size: 180%;
+                width: 90%;
             }
     
             //stylear alla 3 textblocken
             .textblock {
+                width: 90%;
                font-size: 170%;
                line-height: 120%;
-                width: 75%;
             }
     
             .quote {
-                width: 25%;
-                height: 30%;
-                border-top: solid 1px black;
-                border-bottom: solid 1px black;
-                padding: 3%;
-                margin: 8% 0% 5% 5%;
-                font-size: 150%;
+                width: 80%;
+                border-left: solid 4px black;
+                padding: 4%;
+                font-size: 180%;
             }
         }
         
-        //praktikdelen
-        .textblock.internship {
-            width: 100%;
-    
-            h4.tablet {
-                font-size: 200%;
-               
-            }
+        h4.tablet {
+            font-size: 200%;
         }
 }//HÄR SLUTAR MEDIA QUERY FÖR TABLET
+
+//Desktop
+@media (min-width: 992px){
+
+    .homepage {
+        display: flex;
+
+        .home {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;//viktig för placeringen av bilden!!!
+            //minska storleken på bilden
+            
+            .about-me {
+                width: 100%;
+
+                .tldr {
+                    width: 100%;
+                    font-size: large;
+                }
+
+                .textblock {
+                    width: 100%;
+                    font-size: 110%;
+                }
+
+                .textblock.internship {
+                    width: 75%;
+                    margin-top: 10%;
+                    background-color: rgba(211, 211, 211, 0.486);
+                    padding: 0% 5% 5% 5%;
+                    border-radius: 5%;
+    
+                }
+
+                .quote {
+                    width: 100%;
+                    height: 20%;
+                    border-left: solid 4px black;
+                    font-size: 130%;
+                    margin-left:15%;
+                } 
+
+            }
+
+
+
+        }
+    }
+
+
+
+
+
+
+
+}
 
 
 
