@@ -124,7 +124,12 @@ body {
 
 @media (min-width: 992px) {
   header .desktop-nav a {
-    font-size: 150%;
+    font-size: 130%;
+    padding: 2% 0%;
+  }
+  header .desktop-nav a:hover {
+    color: lightgray;
+    text-decoration: underline;
   }
   footer.desktop-footer {
     display: -webkit-box;
@@ -134,13 +139,25 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 2% 0%;
   }
   footer.desktop-footer .a-desktop {
-    font-size: 100%;
-    width: 33%;
+    font-size: 130%;
+    margin: 0;
+    padding: 0;
+  }
+  footer.desktop-footer .a-desktop:hover {
+    color: lightgray;
+    text-decoration: underline;
+  }
+  footer.desktop-footer .linkedin-github.desktop {
+    width: 20%;
   }
   body {
     display: -webkit-box;
@@ -200,7 +217,7 @@ body {
   border-radius: 50%;
 }
 
-.homepage .headline-container {
+.homepage .profile-container .headline-container {
   width: 60%;
   height: auto;
   margin-left: 5%;
@@ -209,14 +226,14 @@ body {
   text-align: center;
 }
 
-.homepage .headline-container h1 {
+.homepage .profile-container .headline-container h1 {
   font-size: 200%;
   line-height: 110%;
 }
 
-.homepage .headline-container h2 {
+.homepage .profile-container .headline-container h2 {
   font-size: 130%;
-  line-height: 80%;
+  line-height: normal;
 }
 
 section {
@@ -286,7 +303,8 @@ section .internship h4 {
   }
   .profile-container .headline-container h2.tablet {
     font-size: 200%;
-    line-height: 50%;
+    line-height: normal;
+    margin: 0;
   }
   .about-me {
     display: -webkit-box;
@@ -336,6 +354,46 @@ section .internship h4 {
             flex-direction: row;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+  }
+  .homepage .home .profile-container {
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 5%;
+  }
+  .homepage .home .profile-container .image-container {
+    height: 75%;
+    padding: 0;
+    margin: 0;
+  }
+  .homepage .home .profile-container .image-container .portraitimg {
+    height: 100%;
+    border-radius: 0;
+    -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+            box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+  }
+  .homepage .home .profile-container .headline-container {
+    height: 75%;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+  }
+  .homepage .home .profile-container .headline-container h1 {
+    font-size: 250%;
+    line-height: normal;
+    margin-bottom: 0;
+    margin-top: 12%;
+  }
+  .homepage .home .profile-container .headline-container h2 {
+    font-size: 150%;
+    line-height: normal;
   }
   .homepage .home .about-me {
     width: 100%;

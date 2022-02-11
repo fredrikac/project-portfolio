@@ -3,8 +3,7 @@
 //Mobile first
 body {
     margin: 0;
-    display: flex;
-    flex-direction: column;
+    @include flex-column;
     align-items: center;
 }
 
@@ -12,8 +11,7 @@ body {
 .content-wrapper {
     width: 100%;  
     margin: -2px;
-    display: flex;
-    flex-direction: column;
+    @include flex-column;
 
     //font och decoration för länkar i header & footer
     a {
@@ -32,15 +30,13 @@ body {
         color: white;
         
         nav {
-            display: flex; 
-            flex-direction: row;
+            @include flex-row;
             justify-content: space-evenly;
         }
     }
 
     main {
-        display: flex;
-        flex-direction: column;
+        @include flex-column;
         margin: 0% 10% 10% 10%;//marginal på sidorna & botten
     
         h1, h2, h3, h4{
@@ -57,15 +53,13 @@ body {
         width: 100%;
         background: $accent-color;
         color: white;
-        display: flex;
-        flex-direction: column;
+        @include flex-column;
         justify-content: center;
         align-items: center;
         
         .linkedin-github {
             width: 100%;
-            display: flex; 
-            flex-direction: row;
+            @include flex-row;
             justify-content: space-evenly;
         }
     }
@@ -98,29 +92,44 @@ body {
 //Desktop
 @media (min-width: 992px) { 
      
+
     header {
+        
         .desktop-nav {
             a {
-                font-size: 150%;
+                font-size: 130%;
+                padding: 2% 0%;
+            }
+
+            a:hover {
+                @include hover-effect;
             }
         }
     }
     
     
     footer.desktop-footer {
-        display: flex;
-        flex-direction: row;
-        align-items: flex-end;
+        @include flex-row;
+        align-items: center;
+        justify-content: center;
+        padding: 2% 0%;
         
         .a-desktop {
-            font-size: 100%;
-            width: 33%;
+            font-size: 130%;
+            margin: 0;
+            padding: 0;
+        }
+        .a-desktop:hover {
+            @include hover-effect;
+        }
+
+        .linkedin-github.desktop{
+            width: 20%;
         }
     }
 
     body {
-        display: flex;
-        flex-direction: column;
+        @include flex-column;
 
         .content-wrapper {
             display: flex;

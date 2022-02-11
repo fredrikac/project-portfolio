@@ -1,8 +1,7 @@
 // //CV
 //Mobile first 
 .software-skills {
-    display:flex;
-    flex-direction: row;
+    @include flex-row;
     justify-content: space-between;
 
     .wrapper1 {
@@ -55,13 +54,11 @@
 
 
 .code {
-    display: flex;
-    flex-direction: column;
+    @include flex-column;
     margin: 10% 0%;
 
     .code-skills {
-        display: flex;
-        flex-direction: row;
+        @include flex-row;
         justify-content: space-between;
         align-items: center;
      
@@ -115,8 +112,7 @@
 @media only screen and (min-width: 768px) {
 
     .cv-main {
-        display: flex;
-        flex-direction: column;
+        @include flex-column;
         align-items: center;
         font-size: 150%;
 
@@ -139,8 +135,7 @@
                 padding: 0% 5% 5% 5%;
                 
                 .software-skills {
-                    display: flex;
-                    flex-direction: row;
+                    @include flex-row;
                     justify-content: space-between;
 
                     .wrapper1 {

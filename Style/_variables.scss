@@ -16,3 +16,24 @@ $text-font: calibri, sans-serif;
     justify-content: flex-end;
 }
 //@include flex-row-end;
+
+@mixin flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+//@include flex-row;
+
+@mixin flex-column {
+    display: flex; 
+    flex-direction: column;
+}
+
+//@include flex-column;
+
+@mixin hover-effect {
+    color: lightgray;
+    text-decoration: underline;
+}
+
+//@include hover-effect;
