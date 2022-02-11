@@ -616,7 +616,6 @@ section .internship h4 {
 }
 
 .main-cases {
-  height: 725px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -624,7 +623,12 @@ section .internship h4 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  position: relative;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .main-cases .about-cases a {
@@ -633,21 +637,38 @@ section .internship h4 {
   padding: 0;
 }
 
+.main-cases .about-cases h2 {
+  font-size: medium;
+}
+
 .main-cases .mothsvg {
   width: 30%;
   height: auto;
-  position: absolute;
-  bottom: 5px;
-  right: 10px;
+}
+
+@media only screen and (min-width: 768px) {
+  .main-cases {
+    font-size: 150%;
+  }
+  .main-cases .about-cases h2 {
+    font-size: larger;
+  }
 }
 
 @media only screen and (min-width: 992px) {
   .main-cases {
-    height: 300px;
+    font-size: 110%;
+  }
+  .main-cases h1 {
+    padding-top: 5%;
+  }
+  .main-cases .about-cases h2 {
+    font-size: large;
   }
   .main-cases .mothsvg {
-    position: relative;
-    left: 650px;
+    width: 50%;
+    padding: 0;
+    margin: 0;
   }
 }
 /*# sourceMappingURL=style.css.map */

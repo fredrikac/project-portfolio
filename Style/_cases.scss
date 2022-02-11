@@ -1,10 +1,10 @@
 
 .main-cases {
-    height: 725px;//tillfällig
+   
     @include flex-column;
-    // justify-content: flex-start;
-    // align-items: flex-end;
-    position: relative; 
+    justify-content: flex-start;
+    align-items: center;
+  
 
     .about-cases {
         a{
@@ -12,25 +12,45 @@
             text-decoration: underline;
             padding: 0;
         }
+
+        h2 {
+            font-size: medium;
+        }
+
     }
 
     .mothsvg {
         width: 30%;
-        height: auto;
-        position: absolute;
-        bottom: 5px;
-        right: 10px;
+        height: auto;    
+    }
+}
+
+
+
+@media only screen and (min-width: 768px) {
+    .main-cases{
+        font-size: 150%;
+
+        .about-cases h2{
+            font-size: larger;
+        }
+       
     }
 }
 
 @media only screen and(min-width: 992px){
-    
     .main-cases{ 
-        height: 300px;//tillfällig
-        
+        h1 {
+            padding-top: 5%;
+        }
+        font-size: 110%;
+        .about-cases h2 {
+            font-size: large;
+        }
         .mothsvg{
-            position: relative;
-            left: 650px; 
+            width: 50%;
+            padding: 0;
+            margin:0;
         }
     }
 }
