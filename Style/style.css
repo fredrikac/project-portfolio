@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -14,7 +15,6 @@ body {
 
 .content-wrapper {
   width: 100%;
-  margin: -2px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -574,7 +574,33 @@ section .internship h4 {
 @media only screen and (min-width: 992px) {
   .cv-main {
     font-size: 110%;
-    width: 40%;
+    width: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .cv-main h1 {
+    padding-top: 5%;
+  }
+  .cv-main .skillwrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .cv-main .skillwrapper .skills {
+    padding: 0;
+    margin: 0;
+  }
+  .cv-main .skillwrapper .skills h4 {
+    padding-left: 5%;
+  }
+  .cv-main .skillwrapper .skills.html {
+    border-right: solid 1px black;
+    border-left: solid 1px black;
   }
   .cv-main .sidequests {
     margin-top: 10%;
@@ -589,9 +615,39 @@ section .internship h4 {
   }
 }
 
-.about-cases a {
+.main-cases {
+  height: 725px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+}
+
+.main-cases .about-cases a {
   color: black;
   text-decoration: underline;
   padding: 0;
+}
+
+.main-cases .mothsvg {
+  width: 30%;
+  height: auto;
+  position: absolute;
+  bottom: 5px;
+  right: 10px;
+}
+
+@media only screen and (min-width: 992px) {
+  .main-cases {
+    height: 300px;
+  }
+  .main-cases .mothsvg {
+    position: relative;
+    left: 650px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

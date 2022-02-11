@@ -120,8 +120,33 @@
 @media only screen and(min-width: 992px){
 
         .cv-main{
-            font-size: 110%;//variabel?
-            width: 40%;
+            font-size: 110%;
+            width: 50%;
+            display: flex;
+            h1 {
+                padding-top: 5%;
+            }
+ 
+            .skillwrapper {
+                display: flex;
+                flex-direction: row;
+
+                .skills {
+                    padding: 0;
+                    margin: 0;
+                   
+
+                    h4{
+                        padding-left: 5%;
+                    }
+                }
+
+                .skills.html {
+                    border-right: solid 1px black;
+                    border-left: solid 1px black;
+                }
+            }
+
 
             .sidequests {
                 margin-top: 10%;
@@ -133,22 +158,7 @@
                 h4{
                     margin: 0;
                 }
-
                 border-top: solid 1px black;
-
             }
         }
-
-        //nånstans har jag lagt en margin/padding på rubrikerna. Osmart drag. Åtgärda!
-        //undersök varför footern ser annorlunda ut här & på cases. Någon margin eller padding som ligger och stör
-       
-
-   
-
- 
-
-
-
-
-
 }

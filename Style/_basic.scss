@@ -3,6 +3,7 @@
 //Mobile first
 body {
     margin: 0;
+    padding: 0;
     @include flex-column;
     align-items: center;
 }
@@ -10,7 +11,6 @@ body {
 //det här wrappar alltihop, inkl header & footer
 .content-wrapper {
     width: 100%;  
-    margin: -2px;
     @include flex-column;
 
     a {
