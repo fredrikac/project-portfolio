@@ -14,7 +14,7 @@
             width: 50%;
             height: auto;
             display: flex;
-            align-items: center;//centrerar bilden 
+            align-items: center;
     
              img {
                 width: 100%;
@@ -29,7 +29,7 @@
             height: auto;
             margin-left: 5%;
             font-size: 110%;
-            line-height: 50%;//justera detta senare så texten ser bra ut
+            line-height: 50%;
             text-align: center;
 
             h1{
@@ -145,7 +145,7 @@ section {
 
         .home {
             @include flex-row;
-            flex-wrap: wrap;//viktig för placeringen av bilden!!!
+            flex-wrap: wrap;
      
             .profile-container{
                 padding: 0;

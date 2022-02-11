@@ -13,7 +13,6 @@ body {
     margin: -2px;
     @include flex-column;
 
-    //font och decoration för länkar i header & footer
     a {
         font-family: $text-font;
         text-decoration: none;
@@ -37,7 +36,7 @@ body {
 
     main {
         @include flex-column;
-        margin: 0% 10% 10% 10%;//marginal på sidorna & botten
+        margin: 0% 10% 10% 10%;
     
         h1, h2, h3, h4{
             font-family: $h-font;
@@ -90,11 +89,8 @@ body {
 
 
 //Desktop
-@media (min-width: 992px) { 
-     
-
+@media only screen and(min-width: 992px) { 
     header {
-        
         .desktop-nav {
             a {
                 font-size: 130%;
@@ -140,7 +136,4 @@ body {
             width: 50%;
         }
     }
-
-
-
 }

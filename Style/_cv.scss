@@ -3,6 +3,7 @@
 .software-skills {
     @include flex-row;
     justify-content: space-between;
+    margin-bottom: 10%;
 
     .wrapper1 {
         width: 40%;
@@ -14,7 +15,6 @@
         height: auto;
     }
 
-    //skill-bar för program
     .outer-skill{
         width: 100px;
         height: 20px;
@@ -53,63 +53,36 @@
 }
 
 
-.code {
+.experience {
+    margin-bottom: 5%;
+    .italic {
+        font-style: italic;
+    }
+}
+
+
+.code  {
     @include flex-column;
-    margin: 10% 0%;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0;
+    margin: 0; 
 
-    .code-skills {
-        @include flex-row;
-        justify-content: space-between;
-        align-items: center;
-     
+    ul {
+        font-family: $text-font;
+    }
+}
 
-        //bakgrund till text
-        .text-skills {
-            .js {
-                background: rgb(255,255,255);
-                background: linear-gradient(97deg, rgba(255,255,255,0.8832575266434699) 0%, rgba(247,223,30,1) 100%, rgba(244,241,241,1) 100%);
-            }
-
-            .html {
-                background: rgb(255,255,255);
-                background: linear-gradient(97deg, rgba(255,255,255,0.8832575266434699) 0%, rgba(242,103,46,1) 100%, rgba(244,241,241,1) 100%);
-            }
-
-            .css {
-                background: rgb(255,255,255);
-                background: linear-gradient(97deg, rgba(255,255,255,0.8832575266434699) 0%, rgba(12,115,184,1) 100%, rgba(244,241,241,1) 100%);
-            }
-
-            .scss {
-                background: rgb(255,255,255);
-                background: linear-gradient(97deg, rgba(255,255,255,0.8832575266434699) 0%, rgba(48,169,221,1) 100%, rgba(244,241,241,1) 100%);
-            }
-            .c-sharp {
-                background: rgb(255,255,255);
-                background: linear-gradient(97deg, rgba(255,255,255,0.8832575266434699) 0%, rgba(71,115,99,1) 100%, rgba(244,241,241,1) 100%);
-            }
-        }
-
-        //cirkeldiagram
-        .pie-chart {
-            width: 100px;
-            height: 100px;
-            border-radius: 50%;
-            
-            //C#: grön
-            //JS: #f7df1e från javascript logo
-            //HTML: orange #f2672e #e65127
-            //CSS: mörkare blå
-            //SCSS: ljusare blå
-        
-            background: conic-gradient($accent-color 0.00% 2.5%, #e6a327 2.5% 33.3%, #f2672e 33.3% 66.6%, #0c73b8 66.6% 83.3%, #30a9dd 83.3% 100%);
-        }
+.sidequests{
+    a{
+        color: black; 
+        text-decoration: underline;
+        padding: 1%;
     }
 }
 
 //TABLET CV
 @media only screen and (min-width: 768px) {
-
     .cv-main {
         @include flex-column;
         align-items: center;
@@ -121,13 +94,6 @@
 
             .education {
                 margin-bottom: 5%;
-            }
-
-            .experience {
-                margin-bottom: 5%;
-                p.italic {
-                    font-style: italic;
-                }
             }
 
             .software {
@@ -146,31 +112,43 @@
                     }
                 }
             }
+        }
+    }
+}
 
-            .code {
-                padding: 0% 5% 5% 5%;
+//Desktop
+@media only screen and(min-width: 992px){
 
-                .text-skills {
-                    width: 25%;
-                    p {
-                        font-style: italic;
-                        font-weight: 500;
-                    }
+        .cv-main{
+            font-size: 110%;//variabel?
+            width: 40%;
+
+            .sidequests {
+                margin-top: 10%;
+                padding-top: 10%;
+                a:hover {
+                    color: $accent-color;
                 }
 
-                .pie-chart-wrapper {
-                    width: 45%;
-
-                    .pie-chart {
-                        height: 200px;
-                        width: 200px;
-                    }
+                h4{
+                    margin: 0;
                 }
+
+                border-top: solid 1px black;
+
             }
         }
 
-        aside {
-            width: 100%;
-        }
-    }
-}//HÄR SLUTAR MEDIA QUERY FÖR TABLET
+        //nånstans har jag lagt en margin/padding på rubrikerna. Osmart drag. Åtgärda!
+        //undersök varför footern ser annorlunda ut här & på cases. Någon margin eller padding som ligger och stör
+       
+
+   
+
+ 
+
+
+
+
+
+}

@@ -122,7 +122,7 @@ body {
   }
 }
 
-@media (min-width: 992px) {
+@media only screen and (min-width: 992px) {
   header .desktop-nav a {
     font-size: 130%;
     padding: 2% 0%;
@@ -434,6 +434,7 @@ section .internship h4 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-bottom: 10%;
 }
 
 .software-skills .wrapper1 {
@@ -488,6 +489,14 @@ section .internship h4 {
   width: 50%;
 }
 
+.experience {
+  margin-bottom: 5%;
+}
+
+.experience .italic {
+  font-style: italic;
+}
+
 .code {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -496,55 +505,24 @@ section .internship h4 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: 10% 0%;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 0;
+  margin: 0;
 }
 
-.code .code-skills {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.code ul {
+  font-family: calibri, sans-serif;
 }
 
-.code .code-skills .text-skills .js {
-  background: white;
-  background: linear-gradient(97deg, rgba(255, 255, 255, 0.883258) 0%, #f7df1e 100%, #f4f1f1 100%);
-}
-
-.code .code-skills .text-skills .html {
-  background: white;
-  background: linear-gradient(97deg, rgba(255, 255, 255, 0.883258) 0%, #f2672e 100%, #f4f1f1 100%);
-}
-
-.code .code-skills .text-skills .css {
-  background: white;
-  background: linear-gradient(97deg, rgba(255, 255, 255, 0.883258) 0%, #0c73b8 100%, #f4f1f1 100%);
-}
-
-.code .code-skills .text-skills .scss {
-  background: white;
-  background: linear-gradient(97deg, rgba(255, 255, 255, 0.883258) 0%, #30a9dd 100%, #f4f1f1 100%);
-}
-
-.code .code-skills .text-skills .c-sharp {
-  background: white;
-  background: linear-gradient(97deg, rgba(255, 255, 255, 0.883258) 0%, #477363 100%, #f4f1f1 100%);
-}
-
-.code .code-skills .pie-chart {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  background: conic-gradient(#477363 0% 2.5%, #e6a327 2.5% 33.3%, #f2672e 33.3% 66.6%, #0c73b8 66.6% 83.3%, #30a9dd 83.3% 100%);
+.sidequests a {
+  color: black;
+  text-decoration: underline;
+  padding: 1%;
 }
 
 @media only screen and (min-width: 768px) {
@@ -570,12 +548,6 @@ section .internship h4 {
   .cv-main section .education {
     margin-bottom: 5%;
   }
-  .cv-main section .experience {
-    margin-bottom: 5%;
-  }
-  .cv-main section .experience p.italic {
-    font-style: italic;
-  }
   .cv-main section .software {
     padding: 0% 5% 5% 5%;
   }
@@ -597,25 +569,29 @@ section .internship h4 {
   .cv-main section .software .software-skills .wrapper2 {
     width: 40%;
   }
-  .cv-main section .code {
-    padding: 0% 5% 5% 5%;
+}
+
+@media only screen and (min-width: 992px) {
+  .cv-main {
+    font-size: 110%;
+    width: 40%;
   }
-  .cv-main section .code .text-skills {
-    width: 25%;
+  .cv-main .sidequests {
+    margin-top: 10%;
+    padding-top: 10%;
+    border-top: solid 1px black;
   }
-  .cv-main section .code .text-skills p {
-    font-style: italic;
-    font-weight: 500;
+  .cv-main .sidequests a:hover {
+    color: #477363;
   }
-  .cv-main section .code .pie-chart-wrapper {
-    width: 45%;
+  .cv-main .sidequests h4 {
+    margin: 0;
   }
-  .cv-main section .code .pie-chart-wrapper .pie-chart {
-    height: 200px;
-    width: 200px;
-  }
-  .cv-main aside {
-    width: 100%;
-  }
+}
+
+.about-cases a {
+  color: black;
+  text-decoration: underline;
+  padding: 0;
 }
 /*# sourceMappingURL=style.css.map */

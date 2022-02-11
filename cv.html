@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="Style/style.css">
 </head>
 <body>
-    <div class="content-wrapper">
+    <div class="content-wrapper cv">
     <header>
         <nav class="tablet-nav desktop-nav">
             <a href="index.html">hem</a>
@@ -17,9 +17,8 @@
         </nav>
     </header>
     <main class="cv-main">
-        <section>
             <h1>CV</h1>
-            <div class="education">
+            <section class="education">
                 <h2>Utbildning</h2>
                 <p>
                     Frontendutvecklare, Nackademin<br>
@@ -28,9 +27,9 @@
                     Konstvetenskap 90hp<br>
                     Litteraturvetenskap 30hp<br>
                 </p>
-            </div>
+            </section>
 
-            <div class="experience">
+            <section class="experience">
                 <h2>Tidigare roller</h2>
                 <p class="italic">Ett urval</p>
                 <span>
@@ -48,9 +47,9 @@
                 <span>
                     <p>2015.10/2016.10 | Provledare, högskoleprovet</p>
                 </span>
-            </div>
+            </section>
 
-            <div class="software"> <!--wrappar hela programvara-delen inkl rubrik-->
+            <section class="software"> <!--wrappar hela programvara-delen inkl rubrik-->
                 <h3>Programvara</h3>
                 <div class="software-skills"><!--wrappar alla stolpar-->
                     <div class="wrapper1"><!--wrappar första 3-->
@@ -87,41 +86,56 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
 
-            <div class="code">
+            <section class="code">
                 <h3>Kod</h3>
-                <div class="code-skills">
-                    <div class="text-skills">
-                        
-                        <div class="js"><p>JavaScript</p></div>
-                        <div class="html"><p>HTML5</p></div>
-                        <div class="css"><p>CSS</p></div>
-                        <div class="scss"><p>SCSS</p></div>
-                        <div class="c-sharp"><p>C#</p></div>
-                    </div>
-                    <div class="pie-chart-wrapper">
-                    <div class="pie-chart"></div></div>
+                <div class="js skills">
+                    <h4>Javascript</h4>
+                    <ul>
+                        <li>Vanilla js</li>
+                        <li>ES6</li>
+                        <li>Datastructures & algorithms</li>
+                        <li>Debugging</li>
+                        <li>Functional programming</li>
+                    </ul>
                 </div>
-            </div>
+                <div class="html skills">
+                    <h4>HTML5</h4>
+                    <ul>
+                        <li>Semantic HTML</li>
+                        <li>Accessibility according to WCAG</li>
+                    </ul>
+                </div>
+                <div class="css skills">
+                    <h4>CSS</h4>
+                    <ul>
+                        <li>Class based styling</li>
+                        <li>Mobile first</li>
+                        <li>SCSS</li>
+                        <li>Partials, mixins & variables</li>
+                    </ul>
+                </div>
+            </section>
 
 
-        </section>
-        <aside>
+       
+        <section class="sidequests">
             <h4>Side quests</h4>
-            <p> Recensent på <a href="http://dagensbok.com/redaktionen/fredrika-carlsen/"></a>Dagensbok</a><br>
-                Fotografi<br>
-                DIY<br>
-                Styrketräning<br>
+            <p> 
+                Recensent på<a href="http://dagensbok.com/redaktionen/fredrika-carlsen/" target="_blank">Dagensbok</a><br>
+                Fotografi: natur, bröllop och porträtt.<br>
+                DIY: möbelrestaurering, renovering & inredning.<br>
+                Styrketräning: teori & praktik.<br>
                 </p>
-        </aside>
+            </section>
     </main>
 
     <footer class="desktop-footer">
         <div class="linkedin-github">
-        <a class="a-tablet a-desktop" href="https://www.linkedin.com/in/fredrika-carlsen/">LinkedIn</a>
-        <a class="a-tablet a-desktop" href="https://github.com/fredrikac">Github</a></div>
-        <a class="a-tablet a-desktop" href="mailto:fredrika.carlsen@gmail.com">fredrika.carlsen@gmail.com</a>
+        <a class="a-tablet a-desktop" href="https://www.linkedin.com/in/fredrika-carlsen/" target="_blank">LinkedIn</a>
+        <a class="a-tablet a-desktop" href="https://github.com/fredrikac" target="_blank">Github</a></div>
+        <a class="a-tablet a-desktop" href="mailto:fredrika.carlsen@gmail.com" target="_blank">fredrika.carlsen@gmail.com</a>
     </footer>
 </div>
 </body>
