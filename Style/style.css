@@ -214,7 +214,8 @@ body {
   height: auto;
   -o-object-fit: contain;
      object-fit: contain;
-  border-radius: 50%;
+  -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+          box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
 }
 
 .homepage .profile-container .headline-container {
