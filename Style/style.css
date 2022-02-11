@@ -592,8 +592,8 @@ section .internship h4 {
             flex-direction: row;
   }
   .cv-main .skillwrapper .skills {
-    padding: 0;
-    margin: 0;
+    word-wrap: break-word;
+    overflow: auto;
   }
   .cv-main .skillwrapper .skills h4 {
     padding-left: 5%;
@@ -601,6 +601,12 @@ section .internship h4 {
   .cv-main .skillwrapper .skills.html {
     border-right: solid 1px black;
     border-left: solid 1px black;
+    margin-left: %;
+    margin-right: 2%;
+    padding: 0% 2%;
+  }
+  .cv-main .skillwrapper .skills.js {
+    padding-right: 2%;
   }
   .cv-main .sidequests {
     margin-top: 10%;
