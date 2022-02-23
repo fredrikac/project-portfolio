@@ -423,6 +423,13 @@ section .internship h4 {
   }
 }
 
+.education li {
+  font-family: calibri, sans-serif;
+  list-style-type: circle;
+  padding: 0;
+  margin: 0;
+}
+
 .software-skills {
   display: -webkit-box;
   display: -ms-flexbox;

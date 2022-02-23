@@ -1,5 +1,15 @@
 // //CV
 //Mobile first 
+
+.education {
+    
+    li {
+        font-family: $text-font;
+        list-style-type: circle;
+        padding: 0;
+        margin: 0;
+    }
+}
 .software-skills {
     @include flex-row;
     justify-content: space-between;
