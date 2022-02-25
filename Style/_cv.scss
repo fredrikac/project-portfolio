@@ -1,8 +1,6 @@
 // //CV
 //Mobile first 
-
 .education {
-    
     li {
         font-family: $text-font;
         list-style-type: circle;
@@ -10,6 +8,7 @@
         margin: 0;
     }
 }
+
 .software-skills {
     @include flex-row;
     justify-content: space-between;
@@ -129,53 +128,52 @@
 //Desktop
 @media only screen and(min-width: 992px){
 
-        .cv-main{
-            font-size: 110%;
-            width: 50%;
-            display: flex;
-            h1 {
-                padding-top: 5%;
-            }
+    .cv-main{
+        font-size: 110%;
+        width: 50%;
+        display: flex;
+        h1 {
+            padding-top: 5%;
+        }
  
-            .skillwrapper {
-                display: flex;
-                flex-direction: row;
+        .skillwrapper {
+            display: flex;
+            flex-direction: row;
 
-                .skills {
-                   word-wrap: break-word;
-                   overflow: auto;
-                   
-
-                    h4{
-                        padding-left: 5%;
-                    }
-                }
-
-                .skills.html {
-                    border-right: solid 1px black;
-                    border-left: solid 1px black;
-                    margin-left: 2%;
-                    margin-right: 2%;
-                    padding: 0% 2%;
-                }
-
-                .skills.js {
-                    padding-right: 2%;
-                }
-            }
-
-
-            .sidequests {
-                margin-top: 10%;
-                padding-top: 10%;
-                a:hover {
-                    color: $accent-color;
-                }
+            .skills {
+                word-wrap: break-word;
+                overflow: auto;
 
                 h4{
-                    margin: 0;
+                    padding-left: 5%;
                 }
-                border-top: solid 1px black;
+            }
+
+            .skills.html {
+                border-right: solid 1px black;
+                border-left: solid 1px black;
+                margin-left: 2%;
+                margin-right: 2%;
+                padding: 0% 2%;
+            }
+
+            .skills.js {
+                padding-right: 2%;
             }
         }
+
+
+        .sidequests {
+            margin-top: 10%;
+            padding-top: 10%;
+            a:hover {
+                color: $accent-color;
+            }
+
+            h4{
+                margin: 0;
+            }
+            border-top: solid 1px black;
+        }
+    }
 }
