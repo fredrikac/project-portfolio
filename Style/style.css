@@ -1,186 +1,3 @@
-body {
-  margin: 0;
-  padding: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.content-wrapper {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.content-wrapper a {
-  font-family: calibri, sans-serif;
-  text-decoration: none;
-  color: white;
-  padding: 3%;
-  font-size: 100%;
-}
-
-.content-wrapper header {
-  height: 40%;
-  width: 100%;
-  margin: auto;
-  background: #477363;
-  color: white;
-}
-
-.content-wrapper header nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-}
-
-.content-wrapper main {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  margin: 0% 10% 10% 10%;
-}
-
-.content-wrapper main h1, .content-wrapper main h2, .content-wrapper main h3, .content-wrapper main h4 {
-  font-family: "Darker Grotesque", sans-serif;
-}
-
-.content-wrapper main p {
-  font-family: calibri, sans-serif;
-}
-
-.content-wrapper footer {
-  height: 30%;
-  width: 100%;
-  background: #477363;
-  color: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.content-wrapper footer .linkedin-github {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-}
-
-@media only screen and (min-width: 768px) {
-  header .tablet-nav a {
-    font-size: 200%;
-  }
-  footer {
-    padding-bottom: 5%;
-  }
-  footer .a-tablet {
-    font-size: 200%;
-    padding: 4% 0% 0% 0%;
-  }
-  footer .linkedin-github, footer .tablet {
-    width: 75%;
-  }
-}
-
-@media only screen and (min-width: 992px) {
-  header .desktop-nav a {
-    font-size: 130%;
-    padding: 2% 0%;
-  }
-  header .desktop-nav a:hover {
-    color: lightgray;
-    text-decoration: underline;
-  }
-  footer.desktop-footer {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    padding: 2% 0%;
-  }
-  footer.desktop-footer .a-desktop {
-    font-size: 130%;
-    margin: 0;
-    padding: 0;
-  }
-  footer.desktop-footer .a-desktop:hover {
-    color: lightgray;
-    text-decoration: underline;
-  }
-  footer.desktop-footer .linkedin-github.desktop {
-    width: 20%;
-  }
-  body {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  body .content-wrapper {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  body main {
-    width: 50%;
-  }
-}
-
 .homepage .profile-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -420,6 +237,189 @@ section .internship h4 {
     border-left: solid 4px black;
     font-size: 130%;
     margin-left: 15%;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.content-wrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.content-wrapper a {
+  font-family: calibri, sans-serif;
+  text-decoration: none;
+  color: white;
+  padding: 3%;
+  font-size: 100%;
+}
+
+.content-wrapper header {
+  height: 40%;
+  width: 100%;
+  margin: auto;
+  background: #477363;
+  color: white;
+}
+
+.content-wrapper header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.content-wrapper main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0% 10% 10% 10%;
+}
+
+.content-wrapper main h1, .content-wrapper main h2, .content-wrapper main h3, .content-wrapper main h4 {
+  font-family: "Darker Grotesque", sans-serif;
+}
+
+.content-wrapper main p {
+  font-family: calibri, sans-serif;
+}
+
+.content-wrapper footer {
+  height: 30%;
+  width: 100%;
+  background: #477363;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.content-wrapper footer .linkedin-github {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+@media only screen and (min-width: 768px) {
+  header .tablet-nav a {
+    font-size: 200%;
+  }
+  footer {
+    padding-bottom: 5%;
+  }
+  footer .a-tablet {
+    font-size: 200%;
+    padding: 4% 0% 0% 0%;
+  }
+  footer .linkedin-github, footer .tablet {
+    width: 75%;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  header .desktop-nav a {
+    font-size: 130%;
+    padding: 2% 0%;
+  }
+  header .desktop-nav a:hover {
+    color: lightgray;
+    text-decoration: underline;
+  }
+  footer.desktop-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 2% 0%;
+  }
+  footer.desktop-footer .a-desktop {
+    font-size: 130%;
+    margin: 0;
+    padding: 0;
+  }
+  footer.desktop-footer .a-desktop:hover {
+    color: lightgray;
+    text-decoration: underline;
+  }
+  footer.desktop-footer .linkedin-github.desktop {
+    width: 20%;
+  }
+  body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body .content-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body main {
+    width: 50%;
   }
 }
 
