@@ -101,7 +101,9 @@ body {
 //Desktop
 @media only screen and(min-width: 992px) { 
     header {
+
         .desktop-nav {
+            background-image: url('/images/background.jpg');
             a {
                 font-size: 130%;
                 padding: 2% 0%;
@@ -113,12 +115,15 @@ body {
         }
     }
     
-    
+  
+
+
     footer.desktop-footer {
         @include flex-row;
         align-items: center;
         justify-content: center;
         padding: 2% 0%;
+        background-image: url('/images/background.jpg');
         
         .a-desktop {
             font-size: 130%;
