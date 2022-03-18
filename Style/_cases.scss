@@ -4,7 +4,6 @@
     justify-content: flex-start;
     align-items: center;
   
-
     .about-cases {
         a{
             color: black; 
@@ -22,7 +21,33 @@
         width: 30%;
         height: auto;    
     }
+
+
+    .gh-grid{
+        display: flex;
+        text-align: left;
+     
+        .gh-details{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+     
+            a {
+                 color: black;
+                 text-decoration: underline;
+                 font-style: normal;
+             }
+             li {
+                 font-family: $text-font;
+                 margin-bottom: 1em;
+                 font-style: italic;
+                 list-style-type:decimal-leading-zero;
+             }
+        }    
+     }
 }
+
+
 
 
 
@@ -31,7 +56,7 @@
         font-size: 150%;
 
         .about-cases h2{
-            font-size: larger;
+            font-size: large;
         }
        
     }
@@ -51,6 +76,15 @@
             padding: 0;
             margin:0;
         }
+        .gh-grid{
+            .gh-details{
+                width: 35em;
+                a {
+                     font-size: larger;
+                }
+                 
+            }    
+         }
     }
 }
 

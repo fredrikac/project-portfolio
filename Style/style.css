@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Spartan:wght@300;400;500&display=swap");
 .homepage .profile-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -11,7 +12,7 @@
           justify-content: center;
   width: 100%;
   margin: 8% 0%;
-  padding-bottom: 5%;
+  padding-bottom: 8%;
   border-bottom: solid 1px black;
 }
 
@@ -39,18 +40,17 @@
   width: 60%;
   height: auto;
   margin-left: 5%;
-  font-size: 110%;
   line-height: 50%;
   text-align: center;
 }
 
 .homepage .profile-container .headline-container h1 {
-  font-size: 200%;
-  line-height: 110%;
+  font-size: x-large;
+  line-height: normal;
 }
 
 .homepage .profile-container .headline-container h2 {
-  font-size: 130%;
+  font-size: medium;
   line-height: normal;
 }
 
@@ -77,11 +77,11 @@ section .tldr {
 }
 
 section .tldr h3 {
-  font-size: 200%;
+  font-size: 180%;
 }
 
 section .tldr p {
-  font-size: 130%;
+  font-size: 120%;
   line-height: 100%;
 }
 
@@ -178,24 +178,31 @@ section .internship h4 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: space-around;
+        -ms-flex-align: space-around;
+            align-items: space-around;
     margin-bottom: 5%;
+    border-bottom: solid 1px black;
   }
   .homepage .home .profile-container .image-container {
     height: 75%;
     padding: 0;
     margin: 0;
+    -o-object-fit: contain;
+       object-fit: contain;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
-  .homepage .home .profile-container .image-container .portraitimg {
+  .homepage .home .profile-container .image-container img {
     height: 100%;
-    border-radius: 0;
-    -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
-            box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+    width: auto;
   }
   .homepage .home .profile-container .headline-container {
     height: 75%;
@@ -295,6 +302,11 @@ body {
           justify-content: space-evenly;
 }
 
+.content-wrapper header nav a {
+  font-family: "Spartan", sans-serif;
+  font-weight: 500;
+}
+
 .content-wrapper main {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -307,7 +319,8 @@ body {
 }
 
 .content-wrapper main h1, .content-wrapper main h2, .content-wrapper main h3, .content-wrapper main h4 {
-  font-family: "Darker Grotesque", sans-serif;
+  font-family: "Spartan", sans-serif;
+  font-weight: 400;
 }
 
 .content-wrapper main p {
@@ -332,6 +345,11 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.content-wrapper footer a {
+  font-family: "Spartan", sans-serif;
+  font-weight: 500;
 }
 
 .content-wrapper footer .linkedin-github {
@@ -423,11 +441,27 @@ body {
   }
 }
 
-.education li {
+h1 {
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: -1%;
+}
+
+h3 {
+  font-size: medium;
+}
+
+li {
   font-family: calibri, sans-serif;
   list-style-type: circle;
   padding: 0;
   margin: 0;
+}
+
+.education {
+  margin-bottom: 5%;
 }
 
 .software-skills {
@@ -441,7 +475,7 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-bottom: 10%;
+  margin-bottom: 15%;
 }
 
 .software-skills .wrapper1 {
@@ -497,11 +531,16 @@ body {
 }
 
 .experience {
-  margin-bottom: 5%;
+  margin-bottom: 10%;
 }
 
 .experience .italic {
   font-style: italic;
+}
+
+.experience span {
+  margin: -1%;
+  padding: -1%;
 }
 
 .code {
@@ -518,12 +557,15 @@ body {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  padding: 0;
-  margin: 0;
+  margin-bottom: 5%;
 }
 
 .code ul {
   font-family: calibri, sans-serif;
+}
+
+.sidequests {
+  margin-top: 5%;
 }
 
 .sidequests a {
@@ -602,18 +644,19 @@ body {
     word-wrap: break-word;
     overflow: auto;
   }
-  .cv-main .skillwrapper .skills h4 {
-    padding-left: 5%;
-  }
   .cv-main .skillwrapper .skills.html {
-    border-right: solid 1px black;
-    border-left: solid 1px black;
     margin-left: 2%;
     margin-right: 2%;
     padding: 0% 2%;
   }
   .cv-main .skillwrapper .skills.js {
     padding-right: 2%;
+  }
+  .cv-main .code h2 {
+    margin-bottom: 2%;
+  }
+  .cv-main .code h3 {
+    font-weight: 500;
   }
   .cv-main .sidequests {
     margin-top: 10%;
@@ -622,9 +665,6 @@ body {
   }
   .cv-main .sidequests a:hover {
     color: #477363;
-  }
-  .cv-main .sidequests h4 {
-    margin: 0;
   }
 }
 
@@ -659,12 +699,45 @@ body {
   height: auto;
 }
 
+.main-cases .gh-grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: left;
+}
+
+.main-cases .gh-grid .gh-details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.main-cases .gh-grid .gh-details a {
+  color: black;
+  text-decoration: underline;
+  font-style: normal;
+}
+
+.main-cases .gh-grid .gh-details li {
+  font-family: calibri, sans-serif;
+  margin-bottom: 1em;
+  font-style: italic;
+  list-style-type: decimal-leading-zero;
+}
+
 @media only screen and (min-width: 768px) {
   .main-cases {
     font-size: 150%;
   }
   .main-cases .about-cases h2 {
-    font-size: larger;
+    font-size: large;
   }
 }
 
@@ -682,6 +755,12 @@ body {
     width: 50%;
     padding: 0;
     margin: 0;
+  }
+  .main-cases .gh-grid .gh-details {
+    width: 35em;
+  }
+  .main-cases .gh-grid .gh-details a {
+    font-size: larger;
   }
 }
 /*# sourceMappingURL=style.css.map */

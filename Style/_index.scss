@@ -6,7 +6,7 @@
         justify-content: center;
         width: 100%;
         margin: 8% 0%;
-        padding-bottom: 5%;
+        padding-bottom: 8%;
         border-bottom: solid 1px black;
         
     
@@ -28,17 +28,16 @@
             width: 60%;
             height: auto;
             margin-left: 5%;
-            font-size: 110%;
             line-height: 50%;
             text-align: center;
 
             h1{
-                font-size: 200%;
-                line-height: 110%;
+              font-size: x-large;
+                line-height: normal;
             }
 
             h2 {
-                font-size: 130%;
+                font-size: medium;
                 line-height: normal;
             }
         }
@@ -59,11 +58,11 @@ section {
     .tldr {
         line-height: 0%;
         h3 {
-            font-size: 200%;
+            font-size: 180%;
         }
 
         p {
-            font-size: 130%;
+            font-size: 120%;
             line-height: 100%;
         }
 
@@ -150,20 +149,24 @@ section {
             .profile-container{
                 padding: 0;
                 display: flex;
-                justify-content: center;
-                align-items: center;
+                justify-content: space-between;
+                align-items: space-around;
                 margin-bottom: 5%;
+                border-bottom: solid 1px black;
 
                 .image-container{
                     height: 75%;
                     padding: 0;
                     margin: 0;
+                    object-fit: contain;
+                    display: flex;
+                    justify-content: center;
 
-                    .portraitimg {
+                    img {
                         height: 100%;
-                        border-radius: 0;
-                        box-shadow: 0 2px 4px 0 rgba(0,0,0,0.5);
+                        width: auto;
                     }
+                  
                 }
                
                 .headline-container {

@@ -1,18 +1,34 @@
 // //CV
 //Mobile first 
+
+h1{
+    text-align: center;
+}
+
+h2{
+    margin-bottom: -1%;
+}
+
+h3{
+    font-size:medium;
+}
+
+li {
+    font-family: $text-font;
+    list-style-type: circle;
+    padding: 0;
+    margin: 0;
+}
+
 .education {
-    li {
-        font-family: $text-font;
-        list-style-type: circle;
-        padding: 0;
-        margin: 0;
-    }
+    margin-bottom: 5%;
+
 }
 
 .software-skills {
     @include flex-row;
     justify-content: space-between;
-    margin-bottom: 10%;
+    margin-bottom: 15%;
 
     .wrapper1 {
         width: 40%;
@@ -63,9 +79,14 @@
 
 
 .experience {
-    margin-bottom: 5%;
+    margin-bottom: 10%;
     .italic {
         font-style: italic;
+    }
+
+    span {
+        margin: -1%;
+        padding: -1%;
     }
 }
 
@@ -74,8 +95,7 @@
     @include flex-column;
     justify-content: flex-start;
     align-items: flex-start;
-    padding: 0;
-    margin: 0; 
+    margin-bottom: 5%; 
 
     ul {
         font-family: $text-font;
@@ -83,6 +103,8 @@
 }
 
 .sidequests{
+    margin-top: 5%;
+
     a{
         color: black; 
         text-decoration: underline;
@@ -140,18 +162,13 @@
             display: flex;
             flex-direction: row;
 
+
             .skills {
                 word-wrap: break-word;
                 overflow: auto;
-
-                h4{
-                    padding-left: 5%;
-                }
             }
 
             .skills.html {
-                border-right: solid 1px black;
-                border-left: solid 1px black;
                 margin-left: 2%;
                 margin-right: 2%;
                 padding: 0% 2%;
@@ -162,17 +179,24 @@
             }
         }
 
+        .code {
 
+            h2 {
+                margin-bottom: 2%;
+            }
+
+            h3 {
+                font-weight: 500;
+            }
+        }
         .sidequests {
             margin-top: 10%;
             padding-top: 10%;
+            
             a:hover {
                 color: $accent-color;
             }
 
-            h4{
-                margin: 0;
-            }
             border-top: solid 1px black;
         }
     }

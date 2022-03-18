@@ -31,6 +31,10 @@ body {
         nav {
             @include flex-row;
             justify-content: space-evenly;
+            a {
+                font-family: $h-font;
+                font-weight: 500;
+            }
         }
     }
 
@@ -40,6 +44,7 @@ body {
     
         h1, h2, h3, h4{
             font-family: $h-font;
+            font-weight: 400;
         }
     
         p {
@@ -55,6 +60,11 @@ body {
         @include flex-column;
         justify-content: center;
         align-items: center;
+
+        a {
+            font-family: $h-font;
+            font-weight: 500;
+        }
         
         .linkedin-github {
             width: 100%;
