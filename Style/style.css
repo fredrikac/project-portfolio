@@ -315,7 +315,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: 0% 10% 10% 10%;
+  margin: 0% 10% 5% 10%;
 }
 
 .content-wrapper main h1, .content-wrapper main h2, .content-wrapper main h3, .content-wrapper main h4 {
