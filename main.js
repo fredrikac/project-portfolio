@@ -48,7 +48,7 @@ let renderContent = async () => {
 };
 renderContent();
 
-//Clean up function to prevent XSS-attacks
+//Clean up function 
 /*!
  * Sanitize an HTML string
  * (c) 2021 Chris Ferdinandi, MIT License, https://gomakethings.com

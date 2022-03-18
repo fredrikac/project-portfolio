@@ -1,4 +1,4 @@
-
+//Mobile
 .main-cases {
     @include flex-column;
     justify-content: flex-start;
@@ -21,7 +21,6 @@
         width: 30%;
         height: auto;    
     }
-
 
     .gh-grid{
         display: flex;
@@ -48,9 +47,7 @@
 }
 
 
-
-
-
+//Tablet
 @media only screen and (min-width: 768px) {
     .main-cases{
         font-size: 150%;
@@ -62,20 +59,24 @@
     }
 }
 
+//Desktop
 @media only screen and(min-width: 992px){
     .main-cases{ 
         h1 {
             padding-top: 5%;
         }
+
         font-size: 110%;
         .about-cases h2 {
             font-size: large;
         }
+
         .mothsvg{
             width: 50%;
             padding: 0;
             margin:0;
         }
+
         .gh-grid{
             .gh-details{
                 width: 35em;

@@ -53,7 +53,6 @@ section {
         font-style: italic;
         font-weight: bold;
     }
-        
     
     .tldr {
         line-height: 0%;
@@ -81,7 +80,6 @@ section {
 }
 
 
-
 //Tablet HEM
 @media only screen and (min-width: 768px) {
     .profile-container {
@@ -93,7 +91,7 @@ section {
 
         .headline-container {
             @include flex-column;
-            align-items: center;//positionera texten
+            align-items: center;
 
             h1.tablet {
                 font-size: 400%;
@@ -107,7 +105,6 @@ section {
         }
     }
 
-    //textsektion om mig
     .about-me {
         @include flex-column;
         align-items: center;
@@ -117,7 +114,6 @@ section {
             width: 90%;
         }
     
-        //stylear alla 3 textblocken
         .textblock {
             width: 90%;
             font-size: 170%;
@@ -132,9 +128,9 @@ section {
         }
     }
         
-        h4.tablet {
-            font-size: 200%;
-        }
+    h4.tablet {
+        font-size: 200%;
+    }
 }
 
 //Desktop
@@ -166,7 +162,6 @@ section {
                         height: 100%;
                         width: auto;
                     }
-                  
                 }
                
                 .headline-container {
@@ -190,7 +185,6 @@ section {
                     }
                 }
             }
-  
 
             
             .about-me {
