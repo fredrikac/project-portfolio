@@ -20,8 +20,59 @@ li {
     margin: 0;
 }
 
+.dropbtn {
+    color: black;
+    background-color: white;
+    //background-color: $accent-color;
+    //color: white;
+    padding: 5px;
+    font-size: small;
+    text-align: left;
+    text-decoration: underline;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+
+    .edu-h3 {
+        font-family: $text-font;
+        font-size: large;
+        margin-bottom: 0;
+    }
+  }
+
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    //min-width: 160px;
+    width: 100%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #f9f9f9;
+}
+  
+
 .education {
     margin-bottom: 5%;
+
+    p {
+        margin: 3% 0;
+    }
+
+  
 }
 
 .software-skills {
@@ -121,6 +172,21 @@ li {
             width: 100%;
             display: flex;
 
+            .dropdown {
+                .edu-h3 {
+                    font-size: inherit;
+                }
+                .dropbtn {
+                    width: 89%;
+                    padding: 10px;
+                    font-size: large;
+                }
+            }
+
+            .dropdown-content {
+                width: 89%;
+            }
+
             .education {
                 margin-bottom: 5%;
             }
@@ -155,6 +221,25 @@ li {
         h1 {
             padding-top: 5%;
         }
+
+        .education {
+            .dropdown {
+                .edu-h3 {
+                    font-size: large;
+                }
+                .dropbtn {
+                    width: 20%;
+                    padding: 5px;
+                    font-size: small;
+                }
+            }
+    
+            .dropdown-content {
+                width: 50%;
+            }
+
+        }
+  
  
         .skillwrapper {
             display: flex;

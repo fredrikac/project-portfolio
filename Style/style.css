@@ -464,8 +464,53 @@ li {
   margin: 0;
 }
 
+.dropbtn {
+  color: black;
+  background-color: white;
+  padding: 5px;
+  font-size: small;
+  text-align: left;
+  text-decoration: underline;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown .edu-h3 {
+  font-family: calibri, sans-serif;
+  font-size: large;
+  margin-bottom: 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  width: 100%;
+  -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #f9f9f9;
+}
+
 .education {
   margin-bottom: 5%;
+}
+
+.education p {
+  margin: 3% 0;
 }
 
 .software-skills {
@@ -598,6 +643,17 @@ li {
     display: -ms-flexbox;
     display: flex;
   }
+  .cv-main section .dropdown .edu-h3 {
+    font-size: inherit;
+  }
+  .cv-main section .dropdown .dropbtn {
+    width: 89%;
+    padding: 10px;
+    font-size: large;
+  }
+  .cv-main section .dropdown-content {
+    width: 89%;
+  }
   .cv-main section .education {
     margin-bottom: 5%;
   }
@@ -634,6 +690,17 @@ li {
   }
   .cv-main h1 {
     padding-top: 5%;
+  }
+  .cv-main .education .dropdown .edu-h3 {
+    font-size: large;
+  }
+  .cv-main .education .dropdown .dropbtn {
+    width: 20%;
+    padding: 5px;
+    font-size: small;
+  }
+  .cv-main .education .dropdown-content {
+    width: 50%;
   }
   .cv-main .skillwrapper {
     display: -webkit-box;
