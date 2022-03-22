@@ -286,6 +286,7 @@ body {
   width: 100%;
   margin: auto;
   background: #477363;
+  background-image: url("../images/background.jpg");
   color: white;
 }
 
@@ -331,6 +332,7 @@ body {
   height: 30%;
   width: 100%;
   background: #477363;
+  background-image: url("../images/background.jpg");
   color: white;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -383,9 +385,6 @@ body {
 }
 
 @media only screen and (min-width: 992px) {
-  header .desktop-nav {
-    background-image: url("/images/background.jpg");
-  }
   header .desktop-nav a {
     font-size: 130%;
     padding: 2% 0%;
@@ -409,7 +408,6 @@ body {
         -ms-flex-pack: center;
             justify-content: center;
     padding: 2% 0%;
-    background-image: url("/images/background.jpg");
   }
   footer.desktop-footer .a-desktop {
     font-size: 130%;
