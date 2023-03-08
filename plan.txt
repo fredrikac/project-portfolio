@@ -24,16 +24,19 @@ Coding taught me the value of grit. Just keep going, stick to it even when it fe
 
 Recognize these questions? Maybe you've heard them in the brilliant CodeNewbie podcast. 
 
-                                <span class="d-flex flex-row justify-content-between"><p>Final exam project</p><p>-</p></span>
-                                <span class="d-flex flex-row justify-content-between"><p>LIA 2</p><p>Internship </p></span>
-                                <span class="d-flex flex-row justify-content-between"><p>JavaScript 4</p><p>Tests (React, jest)</p></span>
-                                <span class="d-flex flex-row justify-content-between"><p>LIA 1</p><p>Internship</p></span>
-                                <span class="d-flex flex-row justify-content-between"><p>JavaScript 3</p><p>React</p></span>
-                                <span class="d-flex flex-row justify-content-between"><p>Backend</p><p>Node.js</p></span>
-                                <span class="d-flex flex-row justify-content-between"><p>Interaction with CMS</p><p>Strapi CMS & Postman </p></span>
-                                <span class="d-flex flex-row justify-content-between"><p>JavaScript 2</p><p>API calls</p></span>
-                                <span class="d-flex flex-row justify-content-between"><p>Agile frontend projects</p><p>Agile methods, SCRUM</p></span>
-                                <span class="d-flex flex-row justify-content-between"><p>HTML & CSS</p><p>Semantics, accessibility & flexbox</p></span>
-                                <span class="d-flex flex-row justify-content-between"><p>JavaScript 1</p><p>The basics</p></span>
-
+    
+            <!-- <div class="row bg-white rounded shadow-sm mt-5 col-6 ps-3 py-4">
+                <div class="col p-f c-4">
+                    <p class="bold fs-2">JAVASCRIPT</p>
+                    <p class="bold fs-3">REACT</p>
+                    <p class="bold fs-4">HTML</p>
+                    <p class="bold fs-4">CSS</p>
+                    <p class="bold fs-5">BOOTSTRAP</p>
+                    <p class="bold fs-6">SASS</p>
+                    <p class="bold fs-6">MUI</p>
+                    <p class="bold fs-6">GIT</p>
+                    <p class="bold fs-6">ADOBE SUITE</p>
+                    <p class="bold fs-6">FIGMA</p>
+                </div>
+            </div> -->
 
