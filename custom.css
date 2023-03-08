@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Prompt:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap');
+
+.link-style {
+  text-decoration: none;
+}
+
+.link-style:hover {
+  text-decoration: underline;
+}
+
+.arrow {
+  border: solid rgb(255, 255, 255);
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.bg-10 {
+  background-color: hsl(210, 36%, 96%);
+}
+
+.c-1 {
+  color: hsl(209, 61%, 16%)
+}
+
+.c-4 {
+  color: hsl(209, 28%, 39%)
+}
+
+.h-f {
+  font-family:  'Prompt', sans-serif;
+}
+
+.p-f {
+  font-family: 'Open Sans', sans-serif;
+
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.fs-s {
+  font-size: small;
+}
+
+.y-9 {
+  background-color: hsl(48, 100%, 88%);
+}
+
+.y-2 {
+  color: hsl(15, 86%, 30%)
+}
+

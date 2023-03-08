@@ -1,0 +1,21 @@
+- Palett 5 - Refactoring UI
+- Mobilanpassa table 
+- Lägg till en banner eller nåt med html, css, javascript
+
+
+Byt ut text?
+Utkast:
+Best advice I ever received is to get into tech. My best friend planted the idea in my mind, and when the pandemic hit and I got laid off I took the opportunity to change career into tech.
+Best decision I ever made!
+
+My first coding project was about... I have a ton of more or less finished projects. I think the first project I made and deployed on github pages is a fortune teller app. Super simple, really ugly but kinda funny.
+
+
+One thing I wish I knew when I first started to code is.. how creative and rewarding it is! I wish someone had told me earlier that coding isn't exclusively for math geniuses. 
+
+Coding taught me the value of grit. Just keep going, stick to it even when it feels impossibly hard. 
+
+Recognize these questions? Maybe you've heard them in the brilliant CodeNewbie podcast. 
+
+    
+
