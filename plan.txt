@@ -1,17 +1,10 @@
-Palett 5 - blå toner
-Hitta en ny font enl. refactoring ui
-
-Byt bild - rund bild med lite skugga enligt boken - klar
-Byt ut text - engelska? Kortare! 
-Lägga allt på samma sida? 
-Ta bort header?
-Refaktorera med bootstrap - index.html påbörjad
-
+- Palett 5 - Refactoring UI
 - Mobilanpassa table 
 - Lägg till en banner eller nåt med html, css, javascript
 
 
-
+Byt ut text?
+Utkast:
 Best advice I ever received is to get into tech. My best friend planted the idea in my mind, and when the pandemic hit and I got laid off I took the opportunity to change career into tech.
 Best decision I ever made!
 
@@ -25,18 +18,4 @@ Coding taught me the value of grit. Just keep going, stick to it even when it fe
 Recognize these questions? Maybe you've heard them in the brilliant CodeNewbie podcast. 
 
     
-            <!-- <div class="row bg-white rounded shadow-sm mt-5 col-6 ps-3 py-4">
-                <div class="col p-f c-4">
-                    <p class="bold fs-2">JAVASCRIPT</p>
-                    <p class="bold fs-3">REACT</p>
-                    <p class="bold fs-4">HTML</p>
-                    <p class="bold fs-4">CSS</p>
-                    <p class="bold fs-5">BOOTSTRAP</p>
-                    <p class="bold fs-6">SASS</p>
-                    <p class="bold fs-6">MUI</p>
-                    <p class="bold fs-6">GIT</p>
-                    <p class="bold fs-6">ADOBE SUITE</p>
-                    <p class="bold fs-6">FIGMA</p>
-                </div>
-            </div> -->
 
